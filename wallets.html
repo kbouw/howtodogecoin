@@ -123,12 +123,6 @@
     <h2>Upgrading your wallet</h2>
     <p>Wallets are software and get important updates over time. We'll write up how to safely upgrade soon!</p>
 
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-
-    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-    <!-- <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
-
     <footer>
       <hr>
       <ul class="nav nav-pills">
@@ -138,8 +132,22 @@
         <li>
           <a href="https://github.com/kbouwser/howtodogecoin">Github</a>
         </li>
+        <li>
+          <a href="#" id="abc" data-toggle="tooltip" data-placement="top" data-trigger="hover" title="Donations address">DH6GFXn5tghFYnp4M8a55u18sCxtHP23ME</a>
       </ul>
     </footer>
+
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <!-- <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#abc").tooltip();
+      });
+    </script>
   </body>
 </html>
 

@@ -1,4 +1,8 @@
-.img {
+img {
     border: 1px black solid;
     display: block;
+}
+
+body {
+    padding-top: 60px;
 }

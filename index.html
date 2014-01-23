@@ -5,16 +5,15 @@
     <link rel="stylesheet" href="common.css">
     <meta charset="UTF-8">
 
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
 
     <!-- Optional theme -->
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
 
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -30,8 +29,26 @@
 
   <body>
 
-    <nav class="navbar navbar-fixed-top" role="navigation">
-    </nav>
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
 
     <h1>Welcome to how to Dogecoin</h1>
     <p>
@@ -81,7 +98,7 @@
     <p>
       First, go to the <a href="http://dogecoin.com/" target="_blank">official site</a> and grab the appropriate wallet for your operating system. "Browser" is for an online wallet, which we will not cover at this time. The download section looks like this:
     </p>
-    <img src="images/wallet-list.png" class="img" alt="wallet download example" />
+    <img src="images/wallet-list.png" alt="wallet download example" />
 
     <p>
       When you first run the program it takes a while to sync. This is because all transactions are saved in something called a <a href="https://en.bitcoin.it/wiki/Block_chain" target="_blank">block chain</a>. Your wallet must basically download the entire transaction history, so give it some time.
@@ -92,7 +109,7 @@
     <p>
       Now you have a wallet and can start receiving coins! When you select "much receive" you will have a single address. To receive doge, just have people send to this address. Since it is difficult to type, you can just copy paste either by right clicking the address to copy or by selecting the address then clicking "copy address" at the bottom. Windows and OSX have the same layout.
     </p>
-    <img src="images/qt-wallet.png" class="img" alt="receive button example" />
+    <img src="images/qt-wallet.png" alt="receive button example" />
 
     <p>
       Note: if you were introduced to Doge via a tip, we cover how to collect it with your address in the tipping section.
@@ -170,7 +187,7 @@
     <p>
       What is a good temperature? We like to keep our cards at ~70 degrees Celsius and below, although some people are comfortable with going to 80 degrees Celcius. The fans will be very loud, so you have to also balance annoyance with mining power. Higher temps = more risk of permanent damage. Cgminer will have a temperature reading and other software, such as Catalyst control center or gpu-z, will as well.
     </p>
-    <img src="images/ccc-alternative-fan-temp.png" class="img" alt="catalyst control center example" />
+    <img src="images/ccc-alternative-fan-temp.png" alt="catalyst control center example" />
 
     <h2>Software (free)</h2>
     <p>
@@ -227,26 +244,26 @@
     <p>
       Once you have a pool, login to their web page. You need to create a worker for each graphics card / cpu you have mining. Log into the pool account you created and select "my workers" on the left, which is usually under "my account".
     </p>
-    <img src="images/worker-sidebar.png" class="img" alt="worker link example" />
+    <img src="images/worker-sidebar.png" alt="worker link example" />
 
     <p>
       On your worker dashboard, there will be an option to create a new worker.
     </p>
-    <img src="images/worker-dashboard.png" class="img" alt="worker dashboard example" />
+    <img src="images/worker-dashboard.png" alt="worker dashboard example" />
 
     <p>
       Give the worker a user name and password.
     </p>
-    <img src="images/worker-add.png" class="img" alt="adding worker example" />
+    <img src="images/worker-add.png" alt="adding worker example" />
 
 
     <p>Once you've added your new worker, you should see it added to your list. Repeat for as many graphic cards / cpus you plan to have mining and note the usernames and passwords. You can always come back to this page if you forget.</p>
-    <img src="images/worker-complete.png" class="img" alt="listed worker example" />
+    <img src="images/worker-complete.png" alt="listed worker example" />
 
     <p>
       Now go to "Getting Started", which is usually under "Home" or "Help". All the pools we've joined will have at least one stratum with a corresponding port number. Note these.
     </p>
-    <img src="images/getting-started.png" class="img" alt="getting started example" />
+    <img src="images/getting-started.png" alt="getting started example" />
 
 
     <h3>Setting up cgminer (AMD hardware on Windows)</h3>
@@ -258,7 +275,7 @@
     <p>
       First, ensure you have the latest drivers for your graphics card by downloading them <a href="http://support.amd.com/en-us/download" target="_blank">here</a>. If you need help determining what graphics card you have, go to your device manager (control panel > hardware and sound > device manager) and look under "display adapters".
     </p>
-    <img src="images/device-manager-windows.png" class="img" alt="windows device manager example" />
+    <img src="images/device-manager-windows.png" alt="windows device manager example" />
 
     <p>
       After you have installed that, grab the <a href="http://developer.amd.com/tools-and-sdks/heterogeneous-computing/amd-accelerated-parallel-processing-app-sdk/downloads/" target="_blank">AMD sdk</a>.
@@ -284,7 +301,7 @@
     <p>
       Now go to save as, navigate to your cgminer folder, and select the all files dropdown (this lets you save it as a *.bat file instead of a *.txt). Then save it as "whatevernameyouwant.bat". This makes a Windows batch file which runs cgminer.exe with the provided commands. You can close notepad.
     </p>
-    <img src="images/notepad-save-bat.png" class="img" alt="windows batch file example" />
+    <img src="images/notepad-save-bat.png" alt="windows batch file example" />
 
     <p>
       Now run the batch file you created and it should work if it is in the cgminer-3.7.2-windows folder (assuming the default folder name). It may complain about unsafeness or require permission to go through the firewall, but this is ok. Run it anyways and let it through!
@@ -293,7 +310,7 @@
     <p>
       This is an example of a successful screen. Note the GPU temp, hash rate (number next to Kh/s), and HW value. Temperature indicates how hot your card is getting, hash rate is its performance, and HW is hardware errors. We want HW to be 0, so reduce the intensity (ex: -I 9 <- that is a capital i) if it gets too hot or has any HW errors.
     </p>
-    <img src="images/cgminer-success.png" class="img" alt="cgminer success example" />
+    <img src="images/cgminer-success.png" alt="cgminer success example" />
 
     <p>To quit, hit Q or Ctrl + C.</p>
 
@@ -354,18 +371,18 @@
     <p>
       After authenticating your account, you'll receive a series of instructions for depositing Dogecoin to begin tipping. Below is a screen shot of what you should see.
     </p>
-    <img src="images/twitter-instructions.png" class="img" alt="twitter tipping instructions" />
+    <img src="images/twitter-instructions.png" alt="twitter tipping instructions" />
 
     <h3>Send tips!</h3>
     <p>
       Below is an example of how to use the tip bot once you have a positive balance:
     </p>
-    <img src="images/twitter-tip-example.png" class="img" alt="twitter tip example" />
+    <img src="images/twitter-tip-example.png" alt="twitter tip example" />
 
     <p>
       When you send a tip over twitter, your tweet will receive a favorite by the dogetipbot if it was successfully sent.
     </p>
-    <img src="images/twitter-tip-fav.png" class="img" alt="dogetipbot favorite tweet example" />
+    <img src="images/twitter-tip-fav.png" alt="dogetipbot favorite tweet example" />
 
     <p>
       Note: the amount received by the bot will have a 1 Doge reduction because a Doge transfer consumes 1 Doge. For example, if you gave a tip of 50, the recipient will receive 49.
@@ -376,12 +393,12 @@
     <p>
       To review your twitter doge balance, politely ask the dogetipbot by replying with @balance.
     </p>
-    <img src="images/twitter-tip-balance.png" class="img" alt="twitter balance example" />
+    <img src="images/twitter-tip-balance.png" alt="twitter balance example" />
 
     <p>
       To withdraw your monies, just provide the the dogetipbot with your send address and it will kindly send you your doge fortune! 
     </p>
-    <img src="images/twitter-tip-withdraw.png" class="img" alt="twitter withdraw example" />
+    <img src="images/twitter-tip-withdraw.png" alt="twitter withdraw example" />
 
 
     <h2>Tipping with Reddit</h2>
@@ -391,13 +408,13 @@
     <p>
       <a href="http://www.reddit.com/message/compose?to=dogetipbot&subject=register&message=%2Bregister" target="_blank"><strong>+register</strong></a> with the dogetipbot by sending the linked message. (note: you should receive your confirmation almost instantly but during high volume periods of traffic, it may take longer). A further explanation of its recent slowness is found <a href="http://www.reddit.com/r/dogetipbot/comments/1vuaec/the_state_of_udogetipbot_hitting_the_reddit_api/" target="_blank">here</a>.
     </p>
-    <img src="images/reddit-register.png" class="img" alt="register example" />
+    <img src="images/reddit-register.png" alt="register example" />
 
     <h3>2. Deposit to the balance</h3>
     <p>
       Your registration confirmation will include your deposit address and balance. Just send doge to that address. If for any reason you forget your deposit address or tipbot balance, just message <a href="http://www.reddit.com/message/compose?to=dogetipbot&subject=info&message=%2Binfo" target="_blank"><strong>+info</strong></a> to dogetipbot.
     </p>
-    <img src="images/reddit-setup.png" class="img" alt="dogetipbot direct message example" />
+    <img src="images/reddit-setup.png" alt="dogetipbot direct message example" />
 
     <h3>3. Send tips in your comments / replies</h3>
 
@@ -411,6 +428,12 @@
       <li><a href="http://www.reddit.com/message/compose?to=dogetipbot&subject=withdraw&message=%2Bwithdraw%20MYADDRESS%20100%20doge" target="_blank"><strong>+withdraw</a></strong> - used to withdraw dogecoin from your tipbot balance. Format is "+withdraw MYADDRESS 100 doge" where MYADDRESS is your receive address.</li>
       <li><a href="http://www.reddit.com/message/compose?to=dogetipbot&subject=accept&message=%2Baccept" target="_blank"><strong>+accept</a></strong> - If you receive a tip you will get a private message. Accept by replying to the tip message with "+accept". If you receive a tip and don't yet have an account, accepting the tip will create one for you automatically).</li>
     </ul>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <!-- <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
 
     <footer>
     </footer>

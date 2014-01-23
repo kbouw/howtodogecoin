@@ -29,3 +29,8 @@ footer {
 footer hr {
     margin: 0 0 10px 0;
 }
+
+footer span {
+    padding: 10px 15px;
+    display: block;
+}

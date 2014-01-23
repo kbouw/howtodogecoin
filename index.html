@@ -205,7 +205,63 @@
 
     <img src="images/worker-complete.png" class="img" alt="listed worker example" />
 
+    <p>Now go to "Getting Started", which is usually under "Home" or "Help". Take note of the STRATUM and PORT.</p>
 
+    <img src="images/getting-started.png" class="img" alt="getting started example" />
+
+    <h3>Setting up cgminer on windows for AMD</h3>
+
+    <p>As we mentioned, we will be going through this process with cgminer 3.7.2 on Windows with AMD cards.</p>
+
+    <p>First, ensure you have the latest drivers for your graphics card by downloading them <a href="http://support.amd.com/en-us/download" target="_blank">here</a>. If you need help determining what graphics card you have, go to your windows device manager and look under "display adapters".</p>
+
+    <p>After you have installed that, grab the <a href="http://developer.amd.com/tools-and-sdks/heterogeneous-computing/amd-accelerated-parallel-processing-app-sdk/downloads/" target="_blank">AMD sdk</a>.</p>
+
+    <p>Once the sdk is installed, extract your downloaded cgminer file to a location you can remember. Next, open up notepad and paste the following:</p>
+
+    <p>setx GPU_MAX_ALLOC_PERCENT 100<br /> 
+       cgminer --scrypt -I 13 -o stratum+tcp://your-pools-stratum:3333 -u<br /> 
+       Weblogin.Worker -p Worker-password</p>
+
+    <p>where you have your pool's stratum address:port_number after -o, your username.workername after -u, and worker password after -p. It is basically telling it to use 100% of your gpu, scrypt mode (gpu mining), intensity of 13 (max 20, but I recommend you test the waters before tweaking this), then the stratum connection information.</p>
+
+    <p><a href="http://www.overclock.net/t/1449708/guide-how-to-setup-cgminer-for-mining-ltc" target="_blank">Overclock.net</a> has other useful settings you can add, such as:</p>
+
+    <p>--gpu-fan 10-80 (fan speed range to use, in percent)<br />
+       --temp-target 70 (controls fan speed set above)<br />
+       --temp-cutoff 90 (max temperature until CGMiner stops i usually put it at 95)<br />
+       --temp-overheat 80</p>
+
+    <p>Further tweaking, such as overclocking, is beyond the scope of this guide.</p>
+
+    <p>Now go to save as, navigate to your cgminer folder, and select the all files dropdown. Then save it as "whatevernameyouwant.bat". This makes it a Windows batch file which runs cgminer.exe with the provided commands. You can close notepad.</p>
+
+    <p> INSERT IMAGE </p>
+
+    <p>Now run the batch file and it should work. It may complain about unsafeness or require permission to go through the firewall, but this is ok. Run it anyways and let it through!</p>
+
+    <p>This is an example of a successful screen. Note the GPU temp, hash rate, and HW value. Temperature indicates how hot your card is getting, hash rate is its performance, and HW is hardware errors. We want HW to be 0, so reduce the intensity (ex: -I 10 <- that is a capital i) if it gets too hot or has any HW. </p>
+
+    <p> INSERT IMAGE </p>
+
+    <p>To quit, hit Q or Ctrl + C.</p>
+
+    <h2>What if my pool stratum fails?</h2>
+
+    <p>Pools often provide multiple stratums and you can join multiple pools. You will want to configure the cgminer so that it switches if the current stratum fails with --failover-only followed by -o and the alternative stratum information. For example:</p>
+
+    <p>cgminer --scrypt -I 13 --no-submit-stale -o<br />
+       stratum+tcp://stratum.rapidhash.net:3333 -u Weblogin.Worker -p Worker-password<br />
+       --failover-only -o stratum+tcp://stratum2.rapidhash.net:3333 -u<br />
+       Weblogin.Worker -p Worker-password</p>
+
+    <h2>Receiving your mined coins</h2>
+
+    <p>Once you have mined some coins, login to your pool's web interface and go to "edit account", usually under "my account". Give it an address to send coins, then configure automatic payouts. You can also manually request payouts on the right.</p>
+
+    <h2>Moar info</h2>
+
+    <p>So you are happily mining Doge, now what? You can look at both your individual and pool's progress via the pool's web interface. We will add a summary of the dashboard information soon.</p>
 
     <footer>
     </footer>

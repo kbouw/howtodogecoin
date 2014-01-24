@@ -27,6 +27,14 @@ div.thumbnail .caption p {
     margin: 0 0 0 0;
 }
 
+.right {
+    text-align: right;
+}
+
+.update {
+    margin-top: 25px;
+}
+
 /*--------*/
 /* NAVBAR */
 /*--------*/

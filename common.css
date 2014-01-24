@@ -10,6 +10,10 @@ body {
     padding-top: 60px;
 }
 
+code {
+    white-space: normal !important;
+}
+
 .thumbnail img {
     padding: 0 0 0 0;
 }
@@ -31,6 +35,13 @@ div.thumbnail .caption p {
 
 .logo-back {
     color: #348eda !important;
+}
+
+.pageflow {
+    margin-top: 40px;
+}
+.pageflow .right {
+    text-align: right;
 }
 
 /* FOOTER */

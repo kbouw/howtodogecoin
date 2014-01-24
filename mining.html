@@ -195,8 +195,8 @@
     </p>
 
     <p>
-      setx GPU_MAX_ALLOC_PERCENT 100<br />
-      cgminer --scrypt -I 10 --temp-target 70 --gpu-fan 10-70 -o stratum+tcp://your-pools-stratum:port-number -u web-login.worker-name -p worker-password
+      <code>setx GPU_MAX_ALLOC_PERCENT 100</code><br />
+      <code>cgminer --scrypt -I 10 --temp-target 70 --gpu-fan 10-70 -o stratum+tcp://your-pools-stratum:port-number -u web-login.worker-name -p worker-password</code>
     </p>
 
     <p>
@@ -242,7 +242,7 @@
     </p>
 
     <p>
-      cgminer --scrypt -I 13 --no-submit-stale -o stratum+tcp://stratum.rapidhash.net:3333 -u Weblogin.Worker -p Worker-password --failover-only -o stratum+tcp://stratum2.rapidhash.net:3333 -u Weblogin.Worker -p Worker-password
+      <code>cgminer --scrypt -I 13 --no-submit-stale -o stratum+tcp://stratum.rapidhash.net:3333 -u Weblogin.Worker -p Worker-password --failover-only -o stratum+tcp://stratum2.rapidhash.net:3333 -u Weblogin.Worker -p Worker-password</code>
     </p>
 
     <p>
@@ -250,7 +250,7 @@
     </p>
 
     <p>
-      cgminer -I 18 -w 256 --temp-cutoff 90 --temp-overheat 80 --temp-target 75 --gpu-fan 10-85 --no-submit-stale -o stratum+tcp://some-pool.com:1234 -u howtodogecoin.worker1 -p workwork1 --failover-only -o stratum+tcp://stratum.some-other-pool.net:4321 -u howtodogecoin.worker2 -p workwork2
+      <code>cgminer -I 18 -w 256 --temp-cutoff 90 --temp-overheat 80 --temp-target 75 --gpu-fan 10-85 --no-submit-stale -o stratum+tcp://some-pool.com:1234 -u howtodogecoin.worker1 -p workwork1 --failover-only -o stratum+tcp://stratum.some-other-pool.net:4321 -u howtodogecoin.worker2 -p workwork2</code>
     </p>
 
 
@@ -268,6 +268,17 @@
     <p>
       So you are happily mining Doge, now what? You can look at both your individual and pool's progress via the pool's web interface. We will add a summary of the dashboard information soon.
     </p>
+
+    <nav class="well pageflow">
+      <div class="row">
+        <div class="col-md-6">
+          <a href="wallets.html">back: wallets & faucets</a>
+        </div>
+        <div class="col-md-6 right">
+          <a href="tipping.html">next: tipping doge</a>
+        </div>
+      </div>
+    </nav>
 
     <footer>
       <hr>

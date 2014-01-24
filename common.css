@@ -1,3 +1,7 @@
+/*---------*/
+/* GENERAL */
+/*---------*/
+
 img {
     border: 1px black solid;
     display: block;
@@ -8,10 +12,6 @@ img {
 
 body {
     padding-top: 60px;
-}
-
-code {
-    white-space: normal !important;
 }
 
 .thumbnail img {
@@ -27,14 +27,42 @@ div.thumbnail .caption p {
     margin: 0 0 0 0;
 }
 
+/*--------*/
 /* NAVBAR */
+/*--------*/
+
+.navbar-default {
+    background-color: #348eda !important;
+    border-bottom: none !important;
+}
+
+.navbar-default li a {
+    color: white !important;
+    letter-spacing: .05em;
+}
+
+.navbar-nav a:hover {
+    background-color: #50addc !important;
+}
+
+.navbar-nav .active a {
+    background-color: #50addc !important;
+}
+
+.nav-space {
+    margin-right: 40px !important;
+}
 
 .logo {
     font-size: 1.2em;
 }
 
+.logo-front {
+    color: #c0c0c1;
+}
+
 .logo-back {
-    color: #348eda !important;
+    color: white;
 }
 
 .pageflow {
@@ -44,7 +72,9 @@ div.thumbnail .caption p {
     text-align: right;
 }
 
-/* FOOTER */
+/*--------*/
+/* Footer */
+/*--------*/
 
 footer {
     margin: 40px 0 20px 0;

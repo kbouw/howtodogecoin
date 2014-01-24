@@ -38,13 +38,13 @@
           <a class="navbar-brand"><span class="logo logo-front">howto</span><span class="logo logo-back">dogecoin</span></a>
         </div>
         <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="index.html">Intro</a></li>
-            <li><a href="wallets.html">Wallets & faucets</a></li>
-            <li class="active"><a href="mining.html">Mining</a></li>
-            <li><a href="tipping.html">Tipping</a></li>
-            <li><a href="exchanges.html">Currency exchanges</a></li>
-            <li><a href="scams.html">Scams</a></li>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="nav-space"><a href="index.html">Intro</a></li>
+            <li class="nav-space"><a href="wallets.html">Wallets & faucets</a></li>
+            <li class="active nav-space"><a href="mining.html">Mining</a></li>
+            <li class="nav-space"><a href="tipping.html">Tipping</a></li>
+            <li class="nav-space"><a href="exchanges.html">Currency exchanges</a></li>
+            <li class="nav-space"><a href="scams.html">Scams</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -63,7 +63,7 @@
     </p>
 
     <p>
-      While we don’t have any experience in mining rig building, <a href="http://www.coinminingrigs.com/guides/build-dogecoin-mining-rig/" target="_blank">this</a> is a guide we found on example mining builds. The general goal is to get multiple powerful AMD graphic cards with bare-bones everything else (to reduce electricity costs). <a href="https://litecoin.info/Mining_hardware_comparison/raw_data" target="_blank">Here</a> is a comparison of specific card performance (may be out of date). Thanks to the mining craze, you will have to pay top dollar for the popular cards (if you can even find them in stock).
+      While we don’t have any experience building mining rigs, <a href="http://www.coinminingrigs.com/guides/build-dogecoin-mining-rig/" target="_blank">this</a> is a guide we found on example mining rig builds. The general goal is to get multiple powerful AMD graphic cards with bare-bones everything else (to reduce electricity costs). <a href="https://litecoin.info/Mining_hardware_comparison/raw_data" target="_blank">Here</a> is a comparison of specific card performance (may be out of date). Thanks to the mining craze, you will have to pay top dollar for the popular cards (if you can even find them in stock).
     </p>
 
     <p>
@@ -115,7 +115,7 @@
       </tbody>
     </table>
 
-    <p>
+    <p class="alert alert-info">
       Note: for our guide, we use cgminer with an AMD card in Windows. We hope to eventually write guides for other miners / operating systems.
     </p>
 
@@ -153,26 +153,26 @@
     <p>
       Once you have a pool, login to their web page. You need to create a worker for each graphics card / cpu you have mining. Log into the pool account you created and select "my workers" on the left, which is usually under "my account".
     </p>
-    <img src="images/worker-sidebar.png" alt="worker link example" />
+    <img src="images/worker-sidebar.png" class="img-responsive" alt="worker link example" />
 
     <p>
       On your worker dashboard, there will be an option to create a new worker.
     </p>
-    <img src="images/worker-dashboard.png" alt="worker dashboard example" />
+    <img src="images/worker-dashboard.png" class="img-responsive" alt="worker dashboard example" />
 
     <p>
       Give the worker a user name and password.
     </p>
-    <img src="images/worker-add.png" alt="adding worker example" />
+    <img src="images/worker-add.png" class="img-responsive" alt="adding worker example" />
 
 
     <p>Once you've added your new worker, you should see it added to your list. Repeat for as many graphic cards / cpus you plan to have mining and note the usernames and passwords. You can always come back to this page if you forget.</p>
-    <img src="images/worker-complete.png" alt="listed worker example" />
+    <img src="images/worker-complete.png" class="img-responsive" alt="listed worker example" />
 
     <p>
       Now go to "Getting Started", which is usually under "Home" or "Help". All the pools we've joined will have at least one stratum with a corresponding port number. Note these.
     </p>
-    <img src="images/getting-started.png" alt="getting started example" />
+    <img src="images/getting-started.png" class="img-responsive" alt="getting started example" />
 
 
     <h2>Setting up cgminer (AMD hardware on Windows)</h2>
@@ -184,7 +184,7 @@
     <p>
       First, ensure you have the latest drivers for your graphics card by downloading them <a href="http://support.amd.com/en-us/download" target="_blank">here</a>. If you need help determining what graphics card you have, go to your device manager (control panel > hardware and sound > device manager) and look under "display adapters".
     </p>
-    <img src="images/device-manager-windows.png" alt="windows device manager example" />
+    <img src="images/device-manager-windows.png" class="img-responsive" alt="windows device manager example" />
 
     <p>
       After you have installed the latest drivers, grab the <a href="http://developer.amd.com/tools-and-sdks/heterogeneous-computing/amd-accelerated-parallel-processing-app-sdk/downloads/" target="_blank">AMD SDK</a>.
@@ -194,9 +194,9 @@
       Once the SDK is installed, extract your downloaded cgminer file (link in the software section) to a location you can remember. Next, open up notepad and paste the following, replacing your-pools-stratum, port-number, web-login, worker-name, and worker-password with your information:
     </p>
 
-    <p>
-      <code>setx GPU_MAX_ALLOC_PERCENT 100</code><br />
-      <code>cgminer --scrypt -I 10 --temp-target 70 --gpu-fan 10-70 -o stratum+tcp://your-pools-stratum:port-number -u web-login.worker-name -p worker-password</code>
+    <p class="alert alert-info">
+      setx GPU_MAX_ALLOC_PERCENT 100<br />
+      cgminer --scrypt -I 10 --temp-target 70 --gpu-fan 10-70 -o stratum+tcp://your-pools-stratum:port-number -u web-login.worker-name -p worker-password
     </p>
 
     <p>
@@ -214,17 +214,17 @@
     <p>
       Now go to save as, navigate to your cgminer folder, and select the all files dropdown (this lets you save it as a *.bat file instead of a *.txt). Then save it as "whatevernameyouwant.bat". This makes a Windows batch file which runs cgminer.exe with the provided commands. You can close notepad.
     </p>
-    <img src="images/notepad-save-bat.png" alt="windows batch file example" />
+    <img src="images/notepad-save-bat.png" class="img-responsive" alt="windows batch file example" />
 
     <p>
       Now run the batch file you created and it should work if it is in the cgminer-3.7.2-windows folder (assuming the default folder name). It may complain about unsafeness or require permission to go through the firewall, but this is ok. Run it anyways and let it through!
     </p>
-    <img src="images/batch-in-folder.png" alt="where to put the batch file" />
+    <img src="images/batch-in-folder.png" class="img-responsive" alt="where to put the batch file" />
 
     <p>
       This is an example of what you should see if it is successful. Note the GPU temp, hash rate (number next to Kh/s), and HW value. Temperature indicates how hot your card is getting, hash rate is its performance, and HW is hardware errors. We want HW to be 0, so reduce the intensity (ex: -I 9) if it gets too hot or has any HW errors.
     </p>
-    <img src="images/cgminer-success.png" alt="cgminer success example" />
+    <img src="images/cgminer-success.png" class="img-responsive" alt="cgminer success example" />
 
     <p>
       For some reason, some people get a blank console. If this occurs try closing the console, adding "-T" to your batch file (which tells it to go into text mode), and rerunning the batch file. To quit, hit Q or Ctrl + C.
@@ -233,7 +233,7 @@
     <p>
       If the batch file fan control commands do not work, AMD's CCC may have an OverDrive option which lets you manually set fan speed. Below is what my CCC looks like.
     </p>
-    <img src="images/ccc-alternative-fan-temp.png" alt="catalyst control center example" />
+    <img src="images/ccc-alternative-fan-temp.png" class="img-responsive" alt="catalyst control center example" />
 
     <h3>What if my pool stratum fails?</h3>
 
@@ -241,16 +241,16 @@
       Pools often provide multiple stratums and you can join multiple pools. You will want to configure the cgminer so that it switches if the current stratum fails with --failover-only followed by -o and the alternative stratum information. For example:
     </p>
 
-    <p>
-      <code>cgminer --scrypt -I 13 --no-submit-stale -o stratum+tcp://stratum.rapidhash.net:3333 -u Weblogin.Worker -p Worker-password --failover-only -o stratum+tcp://stratum2.rapidhash.net:3333 -u Weblogin.Worker -p Worker-password</code>
+    <p class="alert alert-info">
+      cgminer --scrypt -I 13 --no-submit-stale -o stratum+tcp://stratum.rapidhash.net:3333 -u Weblogin.Worker -p Worker-password --failover-only -o stratum+tcp://stratum2.rapidhash.net:3333 -u Weblogin.Worker -p Worker-password
     </p>
 
     <p>
       Further tweaking, such as overclocking, is beyond the scope of this guide but <a href="http://www.reddit.com/r/dogemining" target="_blank">/r/dogecoin</a> has some guides on the sidebar. If you are curious, this is what I use with a Radeon HD 6970 to get ~500Kh/s at ~70 deg C:
     </p>
 
-    <p>
-      <code>cgminer -I 18 -w 256 --temp-cutoff 90 --temp-overheat 80 --temp-target 75 --gpu-fan 10-85 --no-submit-stale -o stratum+tcp://some-pool.com:1234 -u howtodogecoin.worker1 -p workwork1 --failover-only -o stratum+tcp://stratum.some-other-pool.net:4321 -u howtodogecoin.worker2 -p workwork2</code>
+    <p class="alert alert-info">
+      cgminer -I 18 -w 256 --temp-cutoff 90 --temp-overheat 80 --temp-target 75 --gpu-fan 10-85 --no-submit-stale -o stratum+tcp://some-pool.com:1234 -u howtodogecoin.worker1 -p workwork1 --failover-only -o stratum+tcp://stratum.some-other-pool.net:4321 -u howtodogecoin.worker2 -p workwork2
     </p>
 
 

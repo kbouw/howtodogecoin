@@ -13,6 +13,8 @@ This site is built with HTML, CSS, and JavaScript only. It is very basic and is 
 
 1. fork this repo
 2. make changes on your forked repo
-3. submit a pull request with your changes
+3. fetch and merge the latest changes from kbouwser/howtodogecoin
+4. resolve any conflicts
+5. submit a pull request with your changes
 
 Content (such as images and text) must be you own work or must have the original creator's permission to be included in this guide.

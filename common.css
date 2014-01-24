@@ -10,6 +10,19 @@ body {
     padding-top: 60px;
 }
 
+.thumbnail img {
+    padding: 0 0 0 0;
+}
+
+div.thumbnail .caption {
+    padding: 0 9px 0 9px;
+    text-align: right;
+}
+
+div.thumbnail .caption p {
+    margin: 0 0 0 0;
+}
+
 /* NAVBAR */
 
 .logo {

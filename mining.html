@@ -160,26 +160,26 @@
     <p>
       Once you have a pool, login to their web page. You need to create a worker for each graphics card / cpu you have mining. Log into the pool account you created and select "my workers" on the left, which is usually under "my account".
     </p>
-    <img src="images/worker-sidebar.png" class="img-responsive" alt="worker link example" />
+    <img src="images/worker-sidebar.png" class="image-responsive pic" alt="worker link example" />
 
     <p>
       On your worker dashboard, there will be an option to create a new worker.
     </p>
-    <img src="images/worker-dashboard.png" class="img-responsive" alt="worker dashboard example" />
+    <img src="images/worker-dashboard.png" class="image-responsive pic" alt="worker dashboard example" />
 
     <p>
       Give the worker a user name and password.
     </p>
-    <img src="images/worker-add.png" class="img-responsive" alt="adding worker example" />
+    <img src="images/worker-add.png" class="image-responsive pic" alt="adding worker example" />
 
 
     <p>Once you've added your new worker, you should see it added to your list. Repeat for as many graphic cards / cpus you plan to have mining and note the usernames and passwords. You can always come back to this page if you forget.</p>
-    <img src="images/worker-complete.png" class="img-responsive" alt="listed worker example" />
+    <img src="images/worker-complete.png" class="image-responsive pic" alt="listed worker example" />
 
     <p>
       Now go to "Getting Started", which is usually under "Home" or "Help". All the pools we've joined will have at least one stratum with a corresponding port number. Note these.
     </p>
-    <img src="images/getting-started.png" class="img-responsive" alt="getting started example" />
+    <img src="images/getting-started.png" class="image-responsive pic" alt="getting started example" />
 
 
     <h2>Setting up cgminer (AMD hardware on Windows)</h2>
@@ -191,7 +191,7 @@
     <p>
       First, ensure you have the latest drivers for your graphics card by downloading them <a href="http://support.amd.com/en-us/download" target="_blank">here</a>. If you need help determining what graphics card you have, go to your device manager (control panel > hardware and sound > device manager) and look under "display adapters".
     </p>
-    <img src="images/device-manager-windows.png" class="img-responsive" alt="windows device manager example" />
+    <img src="images/device-manager-windows.png" class="image-responsive pic" alt="windows device manager example" />
 
     <p>
       After you have installed the latest drivers, grab the <a href="http://developer.amd.com/tools-and-sdks/heterogeneous-computing/amd-accelerated-parallel-processing-app-sdk/downloads/" target="_blank">AMD SDK</a>.
@@ -221,17 +221,17 @@
     <p>
       Now go to save as, navigate to your cgminer folder, and select the all files dropdown (this lets you save it as a *.bat file instead of a *.txt). Then save it as "whatevernameyouwant.bat". This makes a Windows batch file which runs cgminer.exe with the provided commands. You can close notepad.
     </p>
-    <img src="images/notepad-save-bat.png" class="img-responsive" alt="windows batch file example" />
+    <img src="images/notepad-save-bat.png" class="image-responsive pic" alt="windows batch file example" />
 
     <p>
       Now run the batch file you created and it should work if it is in the cgminer-3.7.2-windows folder (assuming the default folder name). It may complain about unsafeness or require permission to go through the firewall, but this is ok. Run it anyways and let it through!
     </p>
-    <img src="images/batch-in-folder.png" class="img-responsive" alt="where to put the batch file" />
+    <img src="images/batch-in-folder.png" class="image-responsive pic" alt="where to put the batch file" />
 
     <p>
       This is an example of what you should see if it is successful. Note the GPU temp, hash rate (number next to Kh/s), and HW value. Temperature indicates how hot your card is getting, hash rate is its performance, and HW is hardware errors. We want HW to be 0, so reduce the intensity (ex: -I 9) if it gets too hot or has any HW errors.
     </p>
-    <img src="images/cgminer-success.png" class="img-responsive" alt="cgminer success example" />
+    <img src="images/cgminer-success.png" class="image-responsive pic" alt="cgminer success example" />
 
     <p>
       For some reason, some people get a blank console. If this occurs try closing the console, adding "-T" to your batch file (which tells it to go into text mode), and rerunning the batch file. To quit, hit Q or Ctrl + C.
@@ -240,7 +240,7 @@
     <p>
       If the batch file fan control commands do not work, AMD's CCC may have an OverDrive option which lets you manually set fan speed. Below is what my CCC looks like.
     </p>
-    <img src="images/ccc-alternative-fan-temp.png" class="img-responsive" alt="catalyst control center example" />
+    <img src="images/ccc-alternative-fan-temp.png" class="image-responsive pic" alt="catalyst control center example" />
 
     <h3>What if my pool stratum fails?</h3>
 

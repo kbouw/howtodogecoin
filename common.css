@@ -14,6 +14,10 @@ body {
     padding-top: 60px;
 }
 
+h2 {
+    padding-top: 30px;
+}
+
 .thumbnail img {
     padding: 0 0 0 0;
 }

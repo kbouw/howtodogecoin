@@ -32,7 +32,7 @@ div.thumbnail .caption p {
 /*--------*/
 
 .navbar-default {
-    background-color: #348eda !important;
+    background-color: #4c4c4c !important;
     border-bottom: none !important;
 }
 
@@ -42,11 +42,11 @@ div.thumbnail .caption p {
 }
 
 .navbar-nav a:hover {
-    background-color: #50addc !important;
+    background-color: #348eda !important;
 }
 
 .navbar-nav .active a {
-    background-color: #50addc !important;
+    background-color: #348eda !important;
 }
 
 .logo {
@@ -54,7 +54,7 @@ div.thumbnail .caption p {
 }
 
 .logo-front {
-    color: #8bca5e;
+    color: #4ca3ec;
 }
 
 .logo-back {

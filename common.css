@@ -2,16 +2,30 @@
 /* GENERAL */
 /*---------*/
 
+html {
+    overflow-y: scroll;
+}
+
 img {
-    border: 1px black solid;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px 0;
+}
+
+img.pic {
+    -moz-box-shadow: -3px 1px 20px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: -3px 1px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: -3px 1px 20px rgba(0, 0, 0, 0.3);
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 body {
     padding-top: 60px;
+}
+
+h2 {
+    padding-top: 30px;
 }
 
 .thumbnail img {
@@ -25,6 +39,14 @@ div.thumbnail .caption {
 
 div.thumbnail .caption p {
     margin: 0 0 0 0;
+}
+
+.right {
+    text-align: right;
+}
+
+.update {
+    margin-top: 25px;
 }
 
 /*--------*/

@@ -62,30 +62,42 @@
   </div>
 
   <p>
-    To mine Doge (or any other cryptocurrency), you basically have your computer do hard math and are rewarded with coins. A more detailed explanation of what is going on can be found <a href="http://codinginmysleep.com/bitcoin-mining-in-plain-english/" target="_blank">here</a>. You will have upfront hardware costs and electricity costs but the mining process is free.
+    To mine Doge (or other cryptocurrencies), your computer basically does hard math and is rewarded with coins. A more detailed explanation of what is going on can be found <a href="http://codinginmysleep.com/bitcoin-mining-in-plain-english/" target="_blank">here</a>. You will have upfront hardware costs and electricity costs but the mining process is free.
   </p>
 
   <h2>Hardware</h2>
 
   <p>
-    We are just using gaming comps we already owned, but some people go out of their way to build mining rigs. In terms of hardware efficiency, AMD graphic cards are better than Nvidia graphic cards, and both are much better than CPU mining. We do not recommend using laptops as a lot of heat is generated and laptops are very closed systems.
+    We are just using gaming computers we already owned, but some people go out of their way to build mining rigs. In terms of hardware efficiency, AMD graphic cards are better than Nvidia graphic cards, and both are much better than CPU mining.
   </p>
 
   <p>
-    While we don’t have any experience building mining rigs, <a href="http://www.coinminingrigs.com/guides/build-dogecoin-mining-rig/" target="_blank">this</a> is a guide we found on example mining rig builds. The general goal is to get multiple powerful AMD graphic cards with bare-bones everything else (to reduce electricity costs). <a href="https://litecoin.info/Mining_hardware_comparison/raw_data" target="_blank">Here</a> is a comparison of specific card performance (may be out of date). Thanks to the mining craze, you will have to pay top dollar for the popular cards (if you can even find them in stock).
+    We do not recommend using laptops or all in ones, like iMacs, as they are very closed systems. It is harder for them to dissipate heat and they are more difficult to repair.
   </p>
 
   <p>
-    There is also the option of mining using virtual servers (such as Amazon EC2), which have no hardware cost but bill by usage. However, they are more difficult to set up and we do not think these are cost effective anymore (better to just buy Doge outright). <a href="http://dogeguide.com/" target="_blank">Here</a> is a guide we found if you want to go this route anyways.
+    While we don’t have any experience building mining rigs, we found <a href="http://www.coinminingrigs.com/guides/build-dogecoin-mining-rig/" target="_blank">this</a> guide with template builds. The general goal is to get multiple powerful AMD graphic cards with bare-bones everything else (to reduce electricity costs). <a href="https://litecoin.info/Mining_hardware_comparison/raw_data" target="_blank">Here</a> is a comparison of specific card performance. Thanks to the mining craze, you will have to pay top dollar for the popular cards (if you can even find them in stock) but <a href="http://www.gpuscanner.com/" target="_blank">this site</a> may help with your search.
+  </p>
+
+  <!--
+  computer hardware terms
+  how to get multiple gpus per motherboard with risers
+  scrypt asics...why don't they exist?
+  -->
+
+  <p>
+    You can also mine with virtual servers (such as Amazon EC2), which have no upfront hardware cost but bill by usage. However, they are more difficult to set up and we do not think these are cost effective anymore (better to just buy Doge outright). In fact, a shibe named Grant Ammons wrote up his <a href="http://grantammons.me/bitcoin/using-amazon-ec2-to-mine-dogecoin" target="_blank">experience</a> losing money.<a href="http://dogeguide.com/" target="_blank">Here</a> is a guide we found if you want to go this route anyways.
+  </p>
+
+  <p class="alert alert-danger">
+    <b>WARNING:</b> before mining with your own hardware, you must understand that the computations will cause your hardware to work hard, greatly increasing their temperatures and speeding up wear and tear. It is important that the fan speed is also increased to maintain a target temperature range. Mining software like cgminer can control the fan in most cases, otherwise software like AMD's catalyst control center (CCC) can be used but it varies from card to card. Sometimes even CCC will not have the required functionality.
   </p>
 
   <p>
-    <b>WARNING:</b> before mining with your own hardware, you must understand that the computations will cause your hardware to work hard, greatly increasing their temperatures. It is important that the fan speed is also increased to keep them at a target temperature. Mining software like cgminer can control the fan in most cases, otherwise software like AMD's catalyst control center (CCC) can be used (it varies from card to card. Sometimes even CCC will not have the required functionality).
+    What is a good temperature? We like to keep our cards at ~70 degrees Celsius and below, although some people are comfortable with going to 80 degrees Celsius. The fans will be very loud, so balance annoyance with mining power. Higher temps = more risk of permanent damage. Cgminer has a temperature reading and other software, such as Catalyst control center or gpu-z, will as well.
   </p>
 
-  <p>
-    What is a good temperature? We like to keep our cards at ~70 degrees Celsius and below, although some people are comfortable with going to 80 degrees Celcius. The fans will be very loud, so you have to also balance annoyance with mining power. Higher temps = more risk of permanent damage. Cgminer will have a temperature reading and other software, such as Catalyst control center or gpu-z, will as well.
-  </p>
+  <!-- make a video of how loud the fan is in my machine -->
 
   <h2>Software (free)</h2>
   <p>
@@ -104,7 +116,7 @@
       <tr>
         <td><a href="http://ck.kolivas.org/apps/cgminer/3.7/" target="_blank">CGminer</a></td>
         <td><b>AMD</b>, Nvidia, CPU</td>
-        <td>Best for AMD. Do NOT download the latest version of cgminer (3.10). The latest versions removed support for graphic cards and are only for ASIC hardware. The latest version you can get for Dogecoin mining is 3.7.2. "cgminer-3.7.2-x86_64-built" is for Linux, not Windows.</td>
+        <td>Best for AMD. <i>Do NOT download the latest version of cgminer</i> (3.10+). The latest versions removed support for graphic cards and are only for ASIC hardware. The latest version you can get for Dogecoin mining is 3.7.2. "cgminer-3.7.2-x86_64-built" is for Linux, not Windows.</td>
       </tr>
       <tr>
         <td><a href="https://bitcointalk.org/index.php?topic=167229.0" target="_blank">CUDAminer</a></td>
@@ -114,27 +126,27 @@
       <tr>
         <td><a href="https://bitcointalk.org/index.php?topic=55038.0" target="_blank">CPUminer</a></td>
         <td><b>CPU</b></td>
-        <td>Best for mining with CPUs.</td>
+        <td>Best for mining with CPUs. However, CPU mining in general is not effective.</td>
       </tr>
       <tr>
         <td><a href="http://guiminer.org/guiminer-scrypt.html" target="_blank">GUIminer</a></td>
         <td>AMD, Nvidia, CPU</td>
-        <td>While the page says Litecoin, Litecoin and Dogecoin are both scrypt based so it works with Dogecoin. Easiest to use, but <i>least efficient</i>.</td>
+        <td>While the page says Litecoin, Litecoin and Dogecoin are both scrypt based so it works with Dogecoin. Easiest to setup, but <i>least efficient</i>.</td>
       </tr>
     </tbody>
   </table>
 
   <p class="alert alert-info">
-    Note: for our guide, we use cgminer with an AMD card in Windows. We hope to eventually write guides for other miners / operating systems.
+    Note: for our guide, we use <b>cgminer with an AMD card in Windows</b>. We hope to eventually write guides for other miners / operating systems.
   </p>
 
   <h2>Solo mining vs. Pool mining</h2>
   <p>
-    Mining rewards are random. You are basically searching for blocks, then solving and confirming the block for the block payout (currently the payout is up to 1,000,000 coins per block, but on Feb 14th this will be halved to 500,000 coins per block). The first to find and confirm the block gets the full payout of that block and everyone else has to move on. Stronger hardware = faster searching and confirming.
+    Mining rewards are random. You are basically searching for blocks, then solving and confirming the block for a reward. Currently the payout is up to 1,000,000 coins per block, but over time the reward max amount is halved. When? check <a href="http://blockrewards.com/" target="_blank">here</a>. The first to find and confirm the block gets the full payout of that block and everyone else has to move on. Stronger hardware = faster searching and confirming.
   </p>
 
   <p>
-    From an overall long term view, if you are 0.001% of the computing power overall you should be able to get ~0.001% of the payout overall (less likely to find and confirm blocks, but get 100% of the block payout when it happens). But this is a theoretical long term view, and smart shibes will team up with other shibes then split the rewards (more likely to find and confirm blocks, but split the block payout amongst the team). <b>It is better to get consistent and frequent payouts so team up.</b> To team up with other shibes you have two options, 1: join a <a href="https://en.bitcoin.it/wiki/Bitcoin_Pool" target="_blank">pool</a> or 2: join a <a href="https://en.bitcoin.it/wiki/P2Pool" target="_blank">p2pool</a>.
+    From an overall long term view, if you are 0.001% of the computing power overall you should be able to get ~0.001% of the payout overall (less likely to find and confirm blocks, but get 100% of the block payout when it happens). But this is a theoretical long term view, and smart shibes will team up with other shibes then split the rewards (more likely to find and confirm blocks, but split the block payout amongst the team). <b>It is better to get consistent and frequent payouts so team up.</b> To team up with other shibes you can, 1: join a <a href="https://en.bitcoin.it/wiki/Bitcoin_Pool" target="_blank">pool</a> or 2: join a <a href="https://en.bitcoin.it/wiki/P2Pool" target="_blank">p2pool</a>.
   </p>
 
   <p>
@@ -144,7 +156,7 @@
   <h2>Joining a pool</h2>
 
   <p>
-    To join a pool, select one from the following lists and sign up for an account. Larger pools are more consistent in payouts, but also consider fees or any other perks (such as bonuses for finding a block). All the pools we have tried have the same general interface.
+    To join a pool, select one from the following lists and sign up for an account. Larger pools are more consistent in payouts, but also consider fees or any other perks (such as bonuses for finding a block). All the pools we tried have the same general interface.
   </p>
 
   <ul>
@@ -153,14 +165,14 @@
   </ul>
 
   <p>
-    If you sign up for multiple pools we recommend that you DO NOT use the same passwords. If a pool's credentials are compromised, the attackers will surely try the usernames and passwords on other pools.
+    If you sign up for multiple pools we DO NOT use the same passwords. If a pool is hacked or has malicious intentions, the attackers will surely try the usernames and passwords on other pools.
   </p>
 
 
   <h3>Making workers</h3>
 
   <p>
-    Once you have a pool, login to their web page. You need to create a worker for each graphics card / cpu you have mining. Log into the pool account you created and select "my workers" on the left, which is usually under "my account".
+    Once you joined a pool, login to their web page. You need to create a worker for each graphics card / cpu you have mining. Select "my workers" on the left, which is usually under "my account".
   </p>
   <img src="images/worker-sidebar.png" class="image-responsive pic" alt="worker link example" />
 
@@ -213,7 +225,7 @@
   </p>
 
   <p>
-    -I (capital i) controls the intensity. The max is 20, but I recommend you test the waters before tweaking this. The higher you go the less responsive your computer gets, so don't set it too high if you plan to actually use your computer at the same time.
+    -I (capital i) controls the intensity. The max is 20, but test the waters before tweaking this. The higher you go the less responsive your computer gets, so don't set it high if you plan to actually use your computer when mining.
   </p>
 
   <p>
@@ -236,7 +248,11 @@
   <img src="images/cgminer-success.png" class="image-responsive pic" alt="cgminer success example" />
 
   <p>
-    For some reason, some people get a blank console. If this occurs try closing the console, adding "-T" to your batch file (which tells it to go into text mode), and rerunning the batch file. To quit, hit Q or Ctrl + C.
+    For some reason, some people get a blank window with no output. If this occurs try closing the window, adding "-T" to your batch file (which tells it to go into text mode), and rerunning the batch file.
+  </p>
+
+  <p>
+    To quit, hit Q or Ctrl + C or click the X.
   </p>
 
   <p>
@@ -269,6 +285,7 @@
   <p>
     Once you have mined some coins, login to your pool's web interface and go to "edit account", usually under "my account". Give it an address to send coins, then configure automatic payouts. You can also manually request payouts on the right.
   </p>
+  <img src="images/cash-out.png" class="image-responsive pic" alt="manual payout" />
 
   <hr>
   

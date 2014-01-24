@@ -63,7 +63,7 @@
     </p>
 
     <p>
-      While we don’t have any experience in mining rig building, <a href="http://www.coinminingrigs.com/guides/build-dogecoin-mining-rig/" target="_blank">this</a> is a guide we found on example mining builds. The general goal is to get multiple powerful AMD graphic cards with bare-bones everything else (to reduce electricity costs).<a href="https://litecoin.info/Mining_hardware_comparison/raw_data" target="_blank">Here</a> is a comparison of specific card performance (may be out of date). Thanks to the mining craze, you will have to pay top dollar for the popular cards (if you can even find them in stock).
+      While we don’t have any experience in mining rig building, <a href="http://www.coinminingrigs.com/guides/build-dogecoin-mining-rig/" target="_blank">this</a> is a guide we found on example mining builds. The general goal is to get multiple powerful AMD graphic cards with bare-bones everything else (to reduce electricity costs). <a href="https://litecoin.info/Mining_hardware_comparison/raw_data" target="_blank">Here</a> is a comparison of specific card performance (may be out of date). Thanks to the mining craze, you will have to pay top dollar for the popular cards (if you can even find them in stock).
     </p>
 
     <p>
@@ -71,36 +71,49 @@
     </p>
 
     <p>
-      <b>WARNING:</b> before mining with your own hardware, you must understand that the computations will cause your hardware to work hard, greatly increasing their temperatures. It is important that the fan speed is also increased to keep them at a target temperature. Cgminer can control the fan in most cases, otherwise software like Catalyst control center can be used (it varies from card to card. Sometimes even CCC will not have the required functionality).
+      <b>WARNING:</b> before mining with your own hardware, you must understand that the computations will cause your hardware to work hard, greatly increasing their temperatures. It is important that the fan speed is also increased to keep them at a target temperature. Mining software like cgminer can control the fan in most cases, otherwise software like AMD's catalyst control center (CCC) can be used (it varies from card to card. Sometimes even CCC will not have the required functionality).
     </p>
 
     <p>
       What is a good temperature? We like to keep our cards at ~70 degrees Celsius and below, although some people are comfortable with going to 80 degrees Celcius. The fans will be very loud, so you have to also balance annoyance with mining power. Higher temps = more risk of permanent damage. Cgminer will have a temperature reading and other software, such as Catalyst control center or gpu-z, will as well.
     </p>
-    <img src="images/ccc-alternative-fan-temp.png" alt="catalyst control center example" />
 
     <h2>Software (free)</h2>
     <p>
       The most popular software for mining is cgminer, cudaminer, and guiminer. Download links are below.
     </p>
 
-    <p>
-      Note:
-      <br />-cudaminer is for Nvidia cards ONLY, and if you have a Nvidia card this is what I recommend (most effective).
-      <br />-I believe cgminer and guiminer can be used with AMD, Nvidia, and CPU mining.
-      <br />-guiminer (gui = graphical user interface) is probably the easiest to use but cgminer is way more efficient for AMD cards.
-      <br />-do NOT download the latest version of cgminer (3.10). The latest versions removed support for graphic cards and are only for ASIC hardware. The latest version you can get for Dogecoin mining is 3.7.2.
-    </p>
-
-    Download locations:
-    <ul>
-      <li><a href="http://guiminer.org/guiminer-scrypt.html" target="_blank">GUIminer</a> *while it says Litecoin, Litecoin and Dogecoin are both scrypt based so it works with Dogecoin.</li>
-      <li><a href="https://bitcointalk.org/index.php?topic=167229.0" target="_blank">CUDAminer</a></li>
-      <li><a href="http://ck.kolivas.org/apps/cgminer/3.7/" target="_blank">CGminer</a> *cgminer-3.7.2-x86_64-built is for Linux, not windows</li>
-    </ul>
-
-    <!-- combine the above into one table -->
-   
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Download</th>
+          <th>For</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="http://ck.kolivas.org/apps/cgminer/3.7/" target="_blank">CGminer</a></td>
+          <td><b>AMD</b>, Nvidia, CPU</td>
+          <td>Best for AMD. Do NOT download the latest version of cgminer (3.10). The latest versions removed support for graphic cards and are only for ASIC hardware. The latest version you can get for Dogecoin mining is 3.7.2. "cgminer-3.7.2-x86_64-built" is for Linux, not Windows.</td>
+        </tr>
+        <tr>
+          <td><a href="https://bitcointalk.org/index.php?topic=167229.0" target="_blank">CUDAminer</a></td>
+          <td><b>Nvidia</b></td>
+          <td>Best for mining with Nvidia graphic cards.</td>
+        </tr>
+        <tr>
+          <td><a href="https://bitcointalk.org/index.php?topic=55038.0" target="_blank">CPUminer</a></td>
+          <td><b>CPU</b></td>
+          <td>Best for mining with CPUs.</td>
+        </tr>
+        <tr>
+          <td><a href="http://guiminer.org/guiminer-scrypt.html" target="_blank">GUIminer</a></td>
+          <td>AMD, Nvidia, CPU</td>
+          <td>While the page says Litecoin, Litecoin and Dogecoin are both scrypt based so it works with Dogecoin. Easiest to use, but <i>least efficient</i>.</td>
+        </tr>
+      </tbody>
+    </table>
 
     <p>
       Note: for our guide, we use cgminer with an AMD card in Windows. We hope to eventually write guides for other miners / operating systems.
@@ -112,21 +125,27 @@
     </p>
 
     <p>
-      From an overall long term view, if you are 0.001% of the computing power overall you should be able to get ~0.001% of the payout overall (less likely to find and confirm blocks, but get 100% of the block payout when it happens). But this is a theoretical long term view, and smart shibes will team up with other shibes then split the rewards (more likely to find and confirm blocks, but split the block payout amongst the team). <b>It is better to get consistent and frequent payouts so team up.</b> To team up with other shibes you have two options, 1. join a <a href="https://en.bitcoin.it/wiki/Bitcoin_Pool" target="_blank">pool</a> or 2. join a <a href="https://en.bitcoin.it/wiki/P2Pool">p2pool</a>.
+      From an overall long term view, if you are 0.001% of the computing power overall you should be able to get ~0.001% of the payout overall (less likely to find and confirm blocks, but get 100% of the block payout when it happens). But this is a theoretical long term view, and smart shibes will team up with other shibes then split the rewards (more likely to find and confirm blocks, but split the block payout amongst the team). <b>It is better to get consistent and frequent payouts so team up.</b> To team up with other shibes you have two options, 1: join a <a href="https://en.bitcoin.it/wiki/Bitcoin_Pool" target="_blank">pool</a> or 2: join a <a href="https://en.bitcoin.it/wiki/P2Pool">p2pool</a>.
     </p>
 
     <p>
-      We went with option 1 although we have heard good things about option 2. However I have heard if your hash rate is low, joining a p2pool is not worth it but I have not personally verified this.
+      We went with option 1 but have heard good things about option 2. However I have read if your hash rate is low, joining a p2pool is not worth it (not personally verified).
     </p>
 
     <h2>Joining a pool</h2>
 
-    To join a pool, select one from the following lists and sign up for an account. Larger pools are more consistent in payouts, but also consider fees or any other perks (such as bonuses for finding a block). All the pools we have tried have the same general interface.
+    <p>
+      To join a pool, select one from the following lists and sign up for an account. Larger pools are more consistent in payouts, but also consider fees or any other perks (such as bonuses for finding a block). All the pools we have tried have the same general interface.
+    </p>
 
-    <a href="http://www.doktorrf.com/dogecoin/pools.html" target="_blank">Doktorrf Dogecoin Pool</a> (sortable)
-    <a href="http://dogepool.com/" target="_blank">Doge Pool</a>
+    <ul>
+      <li><a href="http://www.doktorrf.com/dogecoin/pools.html" target="_blank">Doktorrf pool directory</a> (sortable)</li>
+      <li><a href="http://dogepool.com/" target="_blank">Doge pool directory</a></li>
+    </ul>
 
-    If you sign up for multiple pools we recommend that you DO NOT use the same passwords. If a pool's credentials are compromised, the attackers will surely try the usernames and passwords on other pools.
+    <p>
+      If you sign up for multiple pools we recommend that you DO NOT use the same passwords. If a pool's credentials are compromised, the attackers will surely try the usernames and passwords on other pools.
+    </p>
 
 
     <h3>Making workers</h3>
@@ -156,7 +175,7 @@
     <img src="images/getting-started.png" alt="getting started example" />
 
 
-    <h3>Setting up cgminer (AMD hardware on Windows)</h3>
+    <h2>Setting up cgminer (AMD hardware on Windows)</h2>
 
     <p>
       As we mentioned, we will be going through this process with cgminer 3.7.2 on Windows with AMD cards as that is what we own.
@@ -168,11 +187,11 @@
     <img src="images/device-manager-windows.png" alt="windows device manager example" />
 
     <p>
-      After you have installed that, grab the <a href="http://developer.amd.com/tools-and-sdks/heterogeneous-computing/amd-accelerated-parallel-processing-app-sdk/downloads/" target="_blank">AMD sdk</a>.
+      After you have installed the latest drivers, grab the <a href="http://developer.amd.com/tools-and-sdks/heterogeneous-computing/amd-accelerated-parallel-processing-app-sdk/downloads/" target="_blank">AMD SDK</a>.
     </p>
 
     <p>
-      Once the SDK is installed, extract your downloaded cgminer file to a location you can remember. Next, open up notepad and paste the following, replacing your-pools-stratum, port-number, web-login, worker-name, and worker-password with your information:
+      Once the SDK is installed, extract your downloaded cgminer file (link in the software section) to a location you can remember. Next, open up notepad and paste the following, replacing your-pools-stratum, port-number, web-login, worker-name, and worker-password with your information:
     </p>
 
     <p>
@@ -181,7 +200,11 @@
     </p>
 
     <p>
-      It is basically saying use 100% of your gpu, scrypt mode (gpu mining), intensity of 10 (max 20, but I recommend you test the waters before tweaking this), target temperature of 70, gpu fan speed at 10-70%, then the stratum connection and worker information. Be sure to watch the temperature even with the fan settings, some cards do not respond to these commands.
+      It is basically saying use 100% of your gpu, scrypt mode (gpu mining), intensity of 10, target temperature of 70, gpu fan speed at 10-70%, then the stratum connection and worker information. Be sure to watch the temperature even with the fan settings, some cards do not respond to these commands.
+    </p>
+
+    <p>
+      -I (capital i) controls the intensity. The max is 20, but I recommend you test the waters before tweaking this. The higher you go the less responsive your computer gets, so don't set it too high if you plan to actually use your computer at the same time.
     </p>
 
     <p>
@@ -196,17 +219,21 @@
     <p>
       Now run the batch file you created and it should work if it is in the cgminer-3.7.2-windows folder (assuming the default folder name). It may complain about unsafeness or require permission to go through the firewall, but this is ok. Run it anyways and let it through!
     </p>
+    <img src="images/batch-in-folder.png" alt="where to put the batch file" />
 
     <p>
-      This is an example of a successful screen. Note the GPU temp, hash rate (number next to Kh/s), and HW value. Temperature indicates how hot your card is getting, hash rate is its performance, and HW is hardware errors. We want HW to be 0, so reduce the intensity (ex: -I 9 <- that is a capital i) if it gets too hot or has any HW errors.
+      This is an example of what you should see if it is successful. Note the GPU temp, hash rate (number next to Kh/s), and HW value. Temperature indicates how hot your card is getting, hash rate is its performance, and HW is hardware errors. We want HW to be 0, so reduce the intensity (ex: -I 9) if it gets too hot or has any HW errors.
     </p>
     <img src="images/cgminer-success.png" alt="cgminer success example" />
 
-    <p>To quit, hit Q or Ctrl + C.</p>
+    <p>
+      For some reason, some people get a blank console. If this occurs try closing the console, adding "-T" to your batch file (which tells it to go into text mode), and rerunning the batch file. To quit, hit Q or Ctrl + C.
+    </p>
 
     <p>
-      If the *.bat fan control commands do not work, AMD's catalyst control center may have an OverDrive option which lets you manually set fan speed.
+      If the batch file fan control commands do not work, AMD's CCC may have an OverDrive option which lets you manually set fan speed. Below is what my CCC looks like.
     </p>
+    <img src="images/ccc-alternative-fan-temp.png" alt="catalyst control center example" />
 
     <h3>What if my pool stratum fails?</h3>
 
@@ -234,6 +261,8 @@
       Once you have mined some coins, login to your pool's web interface and go to "edit account", usually under "my account". Give it an address to send coins, then configure automatic payouts. You can also manually request payouts on the right.
     </p>
 
+    <hr>
+    
     <h2>Moar info</h2>
 
     <p>

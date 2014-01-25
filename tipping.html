@@ -57,14 +57,13 @@
       <h1>Tipping - spread the Doge-ness</h1>
     </div>
     <div class="col-md-4 right update">
-      <code><strong>Last updated on Jan 23, 2014.</strong></code>
+      <code><strong>Last updated on Jan 25, 2014.</strong></code>
     </div>
   </div>
 
   <p>
-    Tipping is possible on Twitter and Reddit (and possibly other places, but this is what we have experience with). Tipping brings much joy and is an essential part of the community. It is also important because it introduces people to the wonders of Dogecoin and keeps doge in circulation.
+    Tipping is possible on Twitter and Reddit (and possibly other places, but this is what we have experience with). Tipping brings much joy and is an essential part of the community. It is also important because it introduces people to the wonders of Dogecoin and keeps Doge in circulation.
   </p>
-
 
   <ul class="nav nav-tabs" id="tipping">
     <li><a href="#reddit" data-toggle="tab">Reddit</a></li>
@@ -76,59 +75,70 @@
 
       <h2>Tipping with Reddit</h2>
 
+      <p>
+        Thanks to the <a href="http://www.reddit.com/r/dogetipbot" target="_blank">dogetipbot</a>, You can easily add tips to comments and replies. Their official guide is found <a href="http://www.reddit.com/r/dogetipbot/wiki/gettingstarted" target="_blank">here</a>.
+      </p>
+
       <h3>1. Register with the tip bot</h3>
+      <p>
+        There are two ways to register. One is if someone has already sent you a tip and the other is if you are self registering. If you have received a tip, the bot will message you asking if you want to accept. Reply to the message with <b>+accept</b> and dogetipbot will create your account. Skip to step two if you did this, otherwise continue on.
+      </p>
 
       <p>
-        To register with the dogetipbot, you can direct message the bot with <a href="http://www.reddit.com/message/compose?to=dogetipbot&subject=register&message=%2Bregister" target="_blank"><strong>+register</strong></a>. You should receive your confirmation almost instantly but during high volume periods of traffic, it may take longer. A further explanation of its recent slowness is found <a href="http://www.reddit.com/r/dogetipbot/comments/1vuaec/the_state_of_udogetipbot_hitting_the_reddit_api/" target="_blank">here</a>.
-      </p>
+        To register yourself, log into Reddit and send a direct message to the bot with <a href="http://www.reddit.com/message/compose?to=dogetipbot&subject=register&message=%2Bregister" target="_blank"><strong>+register</strong></a>. The bot will reply with a confirmation message, but during high volume periods of traffic it may take longer.
 
       <p class="alert alert-info">
-        Note: This step is not required if you have previously received a tip from a fellow shibe. The dogetipbot automatically creates a tip account for redditors who have received a tip but have not yet registered. Many smarts!
+        Note: The tip bot is currently slower than normal due to a massive increase in tip volume. You can read more about it <a href="http://www.reddit.com/r/dogetipbot/comments/1vuaec/the_state_of_udogetipbot_hitting_the_reddit_api/" target="_blank">here</a>. It is getting improved so be patient! The next version is right around the corner.
       </p>
+
       <img src="images/tipping/reddit-register.png" class="image-responsive" alt="register example" />
 
       <h3>2. Deposit to the balance</h3>
       <p>
-        Your registration confirmation will include your deposit address and current balance. If you want to deposit dogecoin into your tipbot account, just send doge to the provided address. If for any reason you forget your deposit address or tipbot balance, just message <a href="http://www.reddit.com/message/compose?to=dogetipbot&subject=info&message=%2Binfo" target="_blank"><strong>+info</strong></a> to the dogetipbot.
+        Your registration confirmation will include your deposit address and current balance. You must have something to tip with, so open your wallet and send Doge to the provided address. If for any reason you forget your deposit address or tipbot balance, just message <a href="http://www.reddit.com/message/compose?to=dogetipbot&subject=info&message=%2Binfo" target="_blank"><strong>+info</strong></a> to the dogetipbot.
       </p>
       <img src="images/tipping/reddit-setup.png" class="image-responsive" alt="dogetipbot direct message example" />
 
       <h3>3. Send tips in your comments / replies</h3>
 
       <p>
-        Once you have sent coins to your tip bot balance, you can tip fellow redditors by including something like "+/u/dogetipbot 100 doge - here's some doge!" in your comments and replies. If you want the tip bot to reply as well, make sure to include "verify", like "+/u/dogetipbot 100 doge verify". Check out the dogetip <a href="http://www.reddit.com/r/dogetipbot/wiki/gettingstarted" target="_blank">getting started guide</a> for further information.
+        Once you have a positive tip bot balance, you can tip fellow redditors by including <b>+/u/dogetipbot AMT_TO_SEND doge</b> somewhere in your comments or replies, where AMT_TO_SEND is the amount you want to send over. Comments will tip the original poster, while replies tip the person you are replying to. For example:
+      </p>
+      <img src="images/tipping/reddit-tip-example.png" alt="reddit tip example" />
+
+      <p>
+        If you want the tip bot to reply as well, make sure to include <b>verify</b> after "doge", like "+/u/dogetipbot 100 doge verify".
       </p>
       <img src="images/tipping/reddit-tip.jpg" alt="reddit tip example" />
 
       <p>
-        The receiver of the tip will get a confirmation message if the tip successfully went through.
+        Both you and the receiver of the tip will get a confirmation message if the tip successfully goes through. If you sent a tip, the confirmation message will include your current balance.
       </p>
       <img src="images/tipping/reddit-received-tip.png" alt="reddit tip received example" />
 
-      <h3>4. Withdraw tips you receive</h3>
+      <hr>
+
+      <h3>Withdraw from your balance</h3>
 
       <p>
-        To withdraw tips you have received from your balance, you can direct message the dogetipboth with <a href="http://www.reddit.com/message/compose?to=dogetipbot&subject=withdraw&message=%2Bwithdraw%20MYADDRESS%20100%20doge" target="_blank"><strong>+withdraw</a></strong>.
+        You can withdraw what you deposited / tips received if you have a positive balance. To get Doge back, send a direct message to dogetipbot with <a href="http://www.reddit.com/message/compose?to=dogetipbot&subject=withdraw&message=%2Bwithdraw%20MYADDRESS%20100%20doge" target="_blank"><strong>+withdraw YOUR_ADDRESS AMT_TO_TAKE_OUT doge</a></strong>. Example below.
       </p>
       <img src="images/tipping/reddit-withdraw.png" alt="reddit withdraw example" />
 
-      <hr>
-      <h3>View your tipbot recieve / withdraw history</h3>
+      <h3>View your tipbot account info and history</h3>
 
       <p>
-        If you want to view your transaction history, you can direct message the dogetipbot with <a href="http://www.reddit.com/message/compose?to=dogetipbot&subject=history&message=%2Bhistory" target="_blank"><strong>+history</strong></a> and receive a detailed report.
+        If you need to check your tipbot balance or forget your deposit address, you can message the dogetipbot directly with <a href="http://www.reddit.com/message/compose?to=dogetipbot&subject=info&message=%2Binfo" target="_blank"><strong>+info</strong></a> and it will send you an account summary. If you want to view your transaction history, you can direct message the dogetipbot with <a href="http://www.reddit.com/message/compose?to=dogetipbot&subject=history&message=%2Bhistory" target="_blank"><strong>+history</strong></a> and receive a detailed report.
+      </p>
+      <p>
+        There are also shortcuts to these actions in your tip sent / received confirmation messages.
       </p>
       <img src="images/tipping/reddit-tipbot-history.png" alt="reddit tipbot history example" />
-      <p>INSERT SECOND IMAGE</p>
-
-      <h3>Check your balance and send address</h3>
-
-      <p>
-        If you need to check your tipbot balance or forget your send address, you can direct message the dogetipbot with <a href="http://www.reddit.com/message/compose?to=dogetipbot&subject=info&message=%2Binfo" target="_blank"><strong>+info</strong></a> to receive a reply with both.
-      </p>
-      <img src="images/tipping/reddit-setup.png" alt="dogetipbot info example" />
 
     </div>
+
+
+
 
     <div class="tab-pane" id="twitter">
 

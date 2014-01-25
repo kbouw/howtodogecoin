@@ -54,57 +54,105 @@
 
   <div class="row">
     <div class="col-md-8">
-      <h1>How to start - wallets and faucets</h1>
+      <h1>Getting a Dogecoin wallet</h1>
     </div>
     <div class="col-md-4 right update">
-      <code><strong>Last updated on Jan 23, 2014.</strong></code>
+      <code><strong>Last updated on Jan 24, 2014.</strong></code>
     </div>
   </div>
 
   <p>
-    An alternate guide for a local wallet and faucets can be found at <a href="http://howtodoge.com/" target="_blank">howtodoge.com</a>. We did not realize we had picked a such similar domain and are very sorry shibes.
+    Your wallet is where you keep all your Dogecoins. There are two types, local and online.
   </p>
   <p>
-    Anyways, your wallet is where you keep all your Dogecoins. In our guide, you will use a local wallet. This means all the coins are stored in a file on your computer, so if your computer spontaneously explodes, you will lose your coins! However you can and <i>should</i> make backups.
+    Local wallets save your coins on your computer. This means if your computer spontaneously explodes, you will lose your coins! However you can and <i>should</i> make backups.
   </p>
+
   <p>
-    An alternative is an online wallet service, but this requires trust because they could turn out to be bad shibes and run off with your coins! Even good shibes running an online wallet can potentially be hacked! Note: you can have multiple wallets like having multiple bank accounts. For example, keep some in an online wallet for convenience and store the rest in secure and backed up local wallets.
+    Online wallets are services run by other people. You entrust them with your wallet information and in return, can access your wallet easily from anywhere. It is more convenient than local wallets, but they have their own risks. The people running the wallet service could turn out to be bad shibes and run off with your coins! Even good shibes running an online wallet can lose your information if they are hacked!
   </p>
+
+  <p>
+    You can have multiple wallets, like multiple bank accounts. For example, keep some in an online wallet for convenience and store the rest in secure and backed up local wallets.
+  </p>
+
+  <p class="alert alert-info">
+    Recommendation: start out with a local wallet, then explore online options when you are comfortable with Dogecoin. <i>Never store all your coins online!</i>
+  </p>
+
+  <h3>Select a wallet type</h3>
+
+  <p>
+    Go to the <a href="http://dogecoin.com/" target="_blank">official site</a>. You should see the following:
+  </p>
+
   <img src="images/wallet-list.png" class="img-responsive" alt="wallet download example" />
 
   <p>
-    Pick your operating system below to continue with the guide.
+    Pick your operating system below to continue with the guide. Browser is for an online wallet.
   </p>
 
   <ul class="nav nav-tabs" id="wallets">
     <li><a href="#windows" data-toggle="tab"><i class="fa fa-windows"></i>&nbsp;&nbsp;Windows</a></li>
     <li><a href="#mac" data-toggle="tab"><i class="fa fa-apple"></i>&nbsp;&nbsp;Mac</a></li>
     <li><a href="#browser" data-toggle="tab"><i class="fa fa-cloud"></i>&nbsp;&nbsp;Browser</a></li>
-    <li><a href="#mobile" data-toggle="tab"><i class="fa fa-android"></i>&nbsp;&nbsp;Mobile</a></li>
+    <li><a href="#android" data-toggle="tab"><i class="fa fa-android"></i>&nbsp;&nbsp;Android</a></li>
   </ul>
 
   <div class="tab-content">
+    <!-- ------------------------ WINDOWS GUIDE ------------------------ -->
     <div class="tab-pane" id="windows">
 
-      <h2>1. Download your wallet</h2>
+      <h2>Download and extract your wallet</h2>
 
       <p>
-        First, go to the <a href="http://dogecoin.com/" target="_blank">official site</a> and select the Windows option. Then install and run the wallet!
+        On the <a href="http://dogecoin.com/" target="_blank">official site</a> click the Windows option. It should start downloading the latest wallet in a zip file.
       </p>
+
+      <p>
+        Once downloaded, navigate to the downloaded file and extract the file contents. This can be done by right clicking the file and selecting "extract all" or something similar.
+      </p>
+      <img src="images/wallet/windows/win-download-and-extract.png" class="img-responsive" alt="extract downloaded file" />
+
+      <h3>Running for the first time</h3>
+
+      <p>
+        Go to the extracted contents and run "dogecoin-qt.exe".
+      </p>
+      <img src="images/wallet/windows/win-run-wallet.png" class="img-responsive" alt="run dogecoin-qt" />
+
+      <p>
+        Depending on your security settings, you may asked if you want to run this file. If so, this will come up EVERY time unless you uncheck "always ask before opening this file". <b>Click "Run"</b>.
+      </p>
+      <img src="images/wallet/windows/win-allow-run.png" class="img-responsive" alt="give it permission to run" />
+
+      <p>
+        A loading image should come up. Since the wallet requires an internet connect, if you have a firewall you must allow the program access. Make sure the boxes are checked, then <b>allow access</b> if prompted. Below is what the default Windows 7 firewall looks like.
+      </p>
+      <img src="images/wallet/windows/win-firewall.png" class="img-responsive" alt="let it through the firewall" />
 
       <p>
         When you first run the program it takes a while to sync. This is because all transactions are saved in something called a <a href="https://en.bitcoin.it/wiki/Block_chain" target="_blank">block chain</a>. Your wallet must basically download the entire transaction history, so give it some time.
       </p>
 
-      <h2>2. Your receive address</h2>
-
-      <p>
-        Now you have a wallet and can start receiving coins! When you select "much receive" you will have a single address. To receive Doge, just have people send to this address. Since it is difficult to type, right click the address and select copy OR select the address then click "copy address" at the bottom. If you were introduced to Doge via a tip, we cover how to collect it with your address on the tipping page.
+      <p class="alert alert-info">
+        Tip: if you are impatient you can download most of the block chain through your browser <a href="http://doge.rstreefland.com/" target="_blank">here</a>.
       </p>
-      <img src="images/qt-wallet.png" class="img-responsive" alt="receive button example" />
 
       <p>
-        If you want to track your sources of coins more effectively, you can create new addresses and give them labels from "much receive". For example, I can create and give out a new address to receive doge specifically from this guide, which will distinguish them in the history. All these addresses go to the same wallet though.
+        The bottom left section indicates how much of the block chain is synced, and the bottom right icon indicates if you are connected. Once fully synced, your "wallet" and "recent transactions" will be accurate.
+      </p>
+      <img src="images/wallet/windows/win-block-sync.jpg" class="img-responsive" alt="let it through the firewall" />
+
+      <h2>Receiving Doge</h2>
+
+      <p>
+        Now you have a wallet and can start receiving coins! When you select "much receive" you will see your receive address. To receive Doge, just give people this address. It is difficult to type and is cAse SEnsitIve, so copy by either right clicking the address and selecting copy OR by selecting the address then clicking "copy address" at the bottom.
+      </p>
+      <img src="images/wallet/windows/win-copy-address.png" class="img-responsive" alt="copy example" />
+
+      <p>
+        If you want to track your sources of coins more effectively, you can create new addresses and give them labels from "much receive". For example, I can create and give out a new address to receive doge specifically from this guide, which will distinguish them in the history. All these addresses go to the same wallet.
       </p>
 
       <p class="alert alert-info">
@@ -116,6 +164,7 @@
       <p>
         There is also a "Pls send" button used for sending doge to addresses you know. Just fill out the fields and send!
       </p>
+      <img src="images/wallet/windows/win-send.png" class="img-responsive" alt="sending doge example" />
 
       <h2>Securing your wallet</h2>
       <p>To be written. Much patience, thanks!</p>
@@ -128,7 +177,7 @@
 
     </div>
     
-
+    <!-- ------------------------ OSX GUIDE ------------------------ -->
     <div class="tab-pane" id="mac">
 
       <h2>1. Download your wallet</h2>
@@ -173,6 +222,8 @@
 
 
     </div>
+
+    <!-- ------------------------ BROWSER GUIDE ------------------------ -->
     <div class="tab-pane" id="browser">
 
       <h2>1. Sign up for a wallet</h2>
@@ -206,10 +257,12 @@
 
     </div>
 
-
-
+    <!-- ------------------------ ANDROID GUIDE ------------------------ -->
+    <div class="tab-pane" id="android">
+      <h2>
+        This guide has not been written yet...sorry!
+      </h2>
     </div>
-    <div class="tab-pane" id="mobile"></div>
   </div>
 
   <nav class="well pageflow">

@@ -57,7 +57,7 @@
       <h1>Mine some Dogecoins!</h1>
     </div>
     <div class="col-md-4 right update">
-      <code><strong>Last updated on Jan 23, 2014.</strong></code>
+      <code><strong>Last updated on Jan 25, 2014</strong></code>
     </div>
   </div>
 
@@ -79,16 +79,78 @@
     While we don’t have any experience building mining rigs, we found <a href="http://www.coinminingrigs.com/guides/build-dogecoin-mining-rig/" target="_blank">this</a> guide with template builds. The general goal is to get multiple powerful AMD graphic cards with bare-bones everything else (to reduce electricity costs). <a href="https://litecoin.info/Mining_hardware_comparison/raw_data" target="_blank">Here</a> is a comparison of specific card performance. Thanks to the mining craze, you will have to pay top dollar for the popular cards (if you can even find them in stock) but <a href="http://www.gpuscanner.com/" target="_blank">this site</a> may help with your search.
   </p>
 
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+          Learn more: consumer computer parts and their importance to mining.
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse">
+      <div class="panel-body">
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Part</th>
+              <th>Role in general</th>
+              <th>Importance in mining</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>CPU (main processor)</td>
+              <td>Performs the main computations. The "brain".</td>
+              <td>Needed to get the OS and program running. Speed not important. <b>Go for low electricity usage.</b></td>
+            </tr>
+            <tr>
+              <td>GPU (graphics)</td>
+              <td>Usually handles video related tasks. A second "brain". Comes in two forms: integrated and discreet. Integrated (ex: Intel HD) means it is built into the CPU. Discreet (ex: AMD Radeon or Nvidia GeForce) means it is separated from the CPU so it can be more powerful.</td>
+              <td><b>Discreet cards</b> are more effective at doing the mining calculations. Integrated are not very effective. <b>Go for performance. Most important component.</b></td>
+            </tr>
+            <tr>
+              <td>memory</td>
+              <td>Temporary data storage (data lost if power is cut). Communicates with the CPU / GPU faster than permanent storage can (system would be bottlenecked in speed if it tried to only communicate with permanent storage).</td>
+              <td>Required just for the system to function. Go for minimum viable specs for <b>low electricity usage</b>.</td>
+            </tr>
+            <tr>
+              <td>motherboard</td>
+              <td>Connects everything together and sometimes has ethernet or wifi built in.</td>
+              <td><b>More PCI express slots</b> on it means you can attach more GPUs.</td>
+            </tr>
+            <tr>
+              <td>permanent storage</td>
+              <td>Used to save data even when power is turned off. Usually in the form of hard disk drives (hdd) or solid state drives (ssd). SSDs are faster and have no moving parts (better), but are more expensive.</td>
+              <td>Go for <b>minimal power usage with enough storage</b> for the OS and mining program.</td>
+            </tr>
+            <tr>
+              <td>power supply</td>
+              <td>Converts the power from the outlet into a more regulated form for the computer parts. Rated by their capacity and efficiency. Platinum > Gold > Silver > Bronze.</td>
+              <td><b>Very important</b>. Ensure you pick one that is high quality to protect your expensive GPUs (unexpected surges can damage your hardware). <b>Higher efficiency</b> = less electricity wasted. You also have to buy one with a high enough capacity for your rig.</td>
+            </tr>
+            <tr>
+              <td>additional peripherals</td>
+              <td>Includes wi-fi cards, monitors, keyboards, mice, and other add ons.</td>
+              <td>Mostly not needed for mining beyond initial setup. Wi-fi / ethernet are sometimes built into the motherboard. Hardware enabling an internet connection IS required.</td>
+            </tr>
+          </tbody>
+        </table>
+
+
+      </div>
+    </div>
+  </div>
+
   <!--
   TODO
   why mining is important ELI5
-  computer hardware terms
   how to get multiple gpus per motherboard with risers
   scrypt asics...why don't they exist?
   -->
 
   <p>
-    You can also mine with virtual servers (such as Amazon EC2), which have no upfront hardware cost but bill by usage. However, they are more difficult to set up and we do not think these are cost effective anymore (better to just buy Doge outright). In fact, a shibe named Grant Ammons wrote up his <a href="http://grantammons.me/bitcoin/using-amazon-ec2-to-mine-dogecoin" target="_blank">experience</a> losing money.<a href="http://dogeguide.com/" target="_blank">Here</a> is a guide we found if you want to go this route anyways.
+    You can also mine with virtual servers (such as Amazon EC2), which have no upfront hardware cost but bill by usage. However, they are more difficult to set up and we do not think these are cost effective anymore (better to just buy Doge outright). In fact, a shibe named Grant Ammons wrote up his <a href="http://grantammons.me/bitcoin/using-amazon-ec2-to-mine-dogecoin" target="_blank">experience</a> losing money. <a href="http://dogeguide.com/" target="_blank">Here</a> is a guide we found if you want to go this route anyways.
   </p>
 
   <p class="alert alert-danger">
@@ -139,7 +201,7 @@
   </table>
 
   <p class="alert alert-info">
-    Note: for our guide, we use <b>cgminer with an AMD card in Windows</b>. We hope to eventually write guides for other miners / operating systems.
+    Note: for our guide, we mine <b>in a pool using cgminer with an AMD card in Windows</b>. We hope to eventually write guides for other miners / operating systems.
   </p>
 
   <h2>Solo mining vs. Pool mining</h2>

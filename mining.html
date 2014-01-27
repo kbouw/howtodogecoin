@@ -57,7 +57,7 @@
       <h1>Mine some Dogecoins!</h1>
     </div>
     <div class="col-md-4 right update">
-      <code><strong>Last updated on Jan 25, 2014</strong></code>
+      <code><strong>Last updated on Jan 27, 2014</strong></code>
     </div>
   </div>
 
@@ -154,7 +154,7 @@
   </p>
 
   <p class="alert alert-danger">
-    <b>WARNING:</b> before mining with your own hardware, you must understand that the computations will cause your hardware to work hard, greatly increasing their temperatures and speeding up wear and tear. It is important that the fan speed is also increased to maintain a target temperature range. Mining software like cgminer can control the fan in most cases, otherwise software like AMD's catalyst control center (CCC) can be used but it varies from card to card. Sometimes even CCC will not have the required functionality.
+    <b>Warning:</b> before mining with your own hardware, you must understand that the computations will cause your hardware to work hard, greatly increasing their temperatures and speeding up wear and tear. It is important that the fan speed is also increased to maintain a target temperature range. Mining software like cgminer can control the fan in most cases, otherwise software like AMD's catalyst control center (CCC) can be used but it varies from card to card. Sometimes even CCC will not have the required functionality.
   </p>
 
   <p>
@@ -178,9 +178,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><a href="http://ck.kolivas.org/apps/cgminer/3.7/" target="_blank">CGminer</a></td>
+        <td>
+        <a href="http://ck.kolivas.org/apps/cgminer/3.7/" target="_blank">CGminer</a>
+        <br /><a href="misc/cgminer-3.7.2-windows.zip">*windows zip</a>
+        <br /><a href="misc/cgminer-3.7.2-x86_64-built.tar.bz2">*linux 64 bz2</a>
+        <br /><a href="misc/cgminer-3.7.2-x86_64-built.tar.lrz">*linux 64 lrz</a>
+        </td>
         <td><b>AMD</b>, Nvidia, CPU</td>
-        <td>Best for AMD. <i>Do NOT download the latest version of cgminer</i> (3.10+). The latest versions removed support for graphic cards and are only for ASIC hardware. The latest version you can get for Dogecoin mining is 3.7.2. "cgminer-3.7.2-x86_64-built" is for Linux, not Windows.</td>
+        <td>Best for AMD. <i>Do NOT download the latest version of cgminer</i> (3.10+). The latest versions removed support for graphic cards and are only for ASIC hardware. The latest version you can get for Dogecoin mining is 3.7.2. "cgminer-3.7.2-x86_64-built" is for Linux, not Windows. <b>*prebuilt files were removed from the source, so I am hosting them*</b></td>
       </tr>
       <tr>
         <td><a href="https://bitcointalk.org/index.php?topic=167229.0" target="_blank">CUDAminer</a></td>
@@ -195,7 +200,7 @@
       <tr>
         <td><a href="http://guiminer.org/guiminer-scrypt.html" target="_blank">GUIminer</a></td>
         <td>AMD, Nvidia, CPU</td>
-        <td>While the page says Litecoin, Litecoin and Dogecoin are both scrypt based so it works with Dogecoin. Easiest to setup, but <i>least efficient</i>.</td>
+        <td>While the page says Litecoin, Litecoin and Dogecoin are both scrypt based so it works with Dogecoin. Easiest to setup, but <i>may not be the most efficient</i>.</td>
       </tr>
     </tbody>
   </table>
@@ -228,8 +233,8 @@
     <li><a href="http://dogepool.com/" target="_blank">Doge pool directory</a></li>
   </ul>
 
-  <p>
-    If you sign up for multiple pools we DO NOT use the same passwords. If a pool is hacked or has malicious intentions, the attackers will surely try the usernames and passwords on other pools.
+  <p class="alert alert-danger">
+    <b>Warning:</b> if you sign up for multiple pools we DO NOT use the same passwords. If a pool is hacked or has malicious intentions, the attackers will surely try the usernames and passwords on other pools.
   </p>
 
 

@@ -33,6 +33,10 @@ h3 {
     padding-top: 15px;
 }
 
+.container {
+    max-width: 1000px;
+}
+
 .thumbnail img {
     padding: 0 0 0 0;
 }
@@ -66,6 +70,10 @@ div.thumbnail .caption p {
     border-bottom: 5px solid #f8213e;
 }
 
+.seq-four {
+    border-bottom: 5px solid #ffd554;
+}
+
 .fa-book {
     margin-right: 5px;
 }
@@ -84,12 +92,20 @@ div.thumbnail .caption p {
     letter-spacing: .05em;
 }
 
-.navbar-nav a:hover {
+.navbar-nav a:hover, .navbar-nav a:active, .navbar-nav a:visited, .navbar-nav a:focus {
     background-color: #348eda !important;
 }
 
 .navbar-nav .active a {
     background-color: #348eda !important;
+}
+
+ul.dropdown-menu li a {
+    color: #333 !important;
+}
+
+ul.dropdown-menu li a:hover {
+    background-color: #f6f6f6 !important;
 }
 
 .logo {
@@ -112,7 +128,7 @@ div.thumbnail .caption p {
     text-align: right;
 }
 
-.caret {
+.body-caret {
     float: right;
     border-left: 7px solid transparent !important;
     border-right: 7px solid transparent !important;

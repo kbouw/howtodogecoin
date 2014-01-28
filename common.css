@@ -26,7 +26,11 @@ body {
 }
 
 h2 {
-    padding-top: 30px;
+    padding-top: 20px;
+}
+
+h3 {
+    padding-top: 15px;
 }
 
 .thumbnail img {
@@ -106,4 +110,12 @@ footer hr {
 footer span {
     padding: 10px 15px;
     display: block;
+}
+
+
+#twitter-widget-0 {
+    padding-top: 6px;
+    height: 35px !important;
+    margin-left: 10px;
+    margin-right: 25px;
 }

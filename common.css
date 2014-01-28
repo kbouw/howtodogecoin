@@ -54,6 +54,22 @@ div.thumbnail .caption p {
     margin-top: 25px;
 }
 
+.seq-one {
+    border-bottom: 5px solid #7ddd2e;
+}
+
+.seq-two {
+    border-bottom: 5px solid #0090ff;
+}
+
+.seq-three {
+    border-bottom: 5px solid #f8213e;
+}
+
+.fa-book {
+    margin-right: 5px;
+}
+
 /*--------*/
 /* NAVBAR */
 /*--------*/

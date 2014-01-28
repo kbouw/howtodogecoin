@@ -52,6 +52,10 @@
     </div>
   </nav>
 
+  <!-- add 1 col margin on md+ -->
+  <div class="row">
+  <div class="col-xs-12 col-md-10 col-md-offset-1">
+
   <div class="row">
     <div class="col-md-8">
       <h1>Getting a Dogecoin wallet</h1>
@@ -65,11 +69,11 @@
     Your wallet is where you keep all your Dogecoins. There are two types, local and online.
   </p>
   <p>
-    Local wallets save your coins on your computer. This means if your computer spontaneously explodes, you will lose your coins! However you can and <i>should</i> make backups.
+    <b>Local wallets</b> save your coins on your computer. This means if your computer spontaneously explodes, you will lose your coins! However you can and <i>should</i> make backups.
   </p>
 
   <p>
-    Online wallets are services run by other people. You entrust them with your wallet information and in return, can access your wallet easily from anywhere. It is more convenient than local wallets, but they have their own risks. The people running the wallet service could turn out to be bad shibes and run off with your coins! Even good shibes running an online wallet can lose your information if they are hacked!
+    <b>Online wallets</b> are services run by other people. You entrust them with your wallet information and in return, can access your wallet easily from anywhere. It is more convenient than local wallets, but they have their own risks. The people running the wallet service could turn out to be bad shibes and run off with your coins! Even good shibes running an online wallet can lose your information if they are hacked!
   </p>
 
   <p>
@@ -169,10 +173,56 @@
       <img src="images/wallet/windows/win-send.png" class="img-responsive" alt="sending doge example" />
 
       <h2>Securing your wallet</h2>
-      <p>To be written. Much patience, thanks!</p>
+      <p>
+        The official wallet can encrypt the wallet file, requiring a password to access it. To get started, click "settings" then "encrypt wallet".
+      </p>
+      <img src="images/wallet/windows/win-encrypt-dropdown.png" class="img-responsive" alt="wallet encryption menu" />
+
+      <p>
+        You will be prompted to enter a password and confirm it. The wallet will need to restart afterwards.
+      </p>
+      <p class="alert alert-danger">
+        Warning: do not forget this password. You will lose your wallet if you do.
+      </p>
+      <img src="images/wallet/windows/win-encrypt-pass-create.png" class="img-responsive" alt="wallet password creation" />
 
       <h2>Backing up your wallet</h2>
-      <p>To be written. Much patience, thanks!</p>
+
+      <p class="alert alert-info">
+        Note: we recommend you encrypt your wallet first (instructions above).
+      </p>
+
+      <p>
+        To start, go to "file" then "backup wallet".
+      </p>
+      <img src="images/wallet/windows/win-backup-menu.png" class="img-responsive" alt="wallet backup menu" />
+
+      <p>
+        You will be asked to pick a location to save the file and a file name. Remember where and what you named it, it will be a DAT file.
+      </p>
+      <img src="images/wallet/windows/win-backup-saveas.png" class="img-responsive" alt="wallet backup menu" />
+
+      <p>
+        Now you have a duplicate of your wallet information...however it is on the same computer so it doesn't do you any good if your computer is destroyed or wiped. We need to put it in <i>at least</i> one other location.
+      </p>
+
+      <p>
+        Navigate to your backup file's location and copy it to at least one of the following:
+      </p>
+      <ul>
+        <li>USB or other external drive</li>
+        <li>Dropbox, Google Drive, SkyDrive, or other cloud storage service.</li>
+        <li>Physical media, such as DVD or CD</li>
+      </ul>
+
+      <p class="alert alert-info">
+        Tip: put your physical backups (USB, DVD, CD, etc) in a different location to prevent losing your wallet in the event the building housing your computer is lost.
+      </p>
+
+      <p class="alert alert-info">
+        Tip: place the file in a <a href="http://www.truecrypt.org/" target="_blank">truecrypt</a> volume before placing it in a storage service or physical device to add even more security.
+      </p>
+
 
       <h2>Upgrading your wallet</h2>
       <p>Wallets are software and get important updates over time. We'll write up how to safely upgrade soon!</p>
@@ -356,6 +406,10 @@
       </div>
     </div>
   </nav>
+
+  </div>
+  </div>
+  <!-- end 1 col margin on md+ -->
 
   <footer>
     <hr>

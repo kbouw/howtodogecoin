@@ -96,6 +96,20 @@ div.thumbnail .caption p {
     text-align: right;
 }
 
+.caret {
+    float: right;
+    border-left: 7px solid transparent !important;
+    border-right: 7px solid transparent !important;
+    border-top: 7px solid #707070 !important;
+    margin-top: 6px;
+}
+
+.panel-heading {
+    background-color: #f5f5f5;
+    color: black;
+    border-color: #ddd;
+}
+
 /*--------*/
 /* Footer */
 /*--------*/

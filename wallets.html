@@ -172,6 +172,8 @@
       </p>
       <img src="images/wallet/windows/win-send.png" class="img-responsive" alt="sending doge example" />
 
+      <hr>
+
       <h2>Securing your wallet</h2>
       <p>
         The official wallet can encrypt the wallet file, requiring a password to access it. To get started, click "settings" then "encrypt wallet".
@@ -207,7 +209,7 @@
       </p>
 
       <p>
-        Navigate to your backup file's location and copy it to at least one of the following:
+        Navigate to your backup file's location and copy it to <b>at least one</b> of the following:
       </p>
       <ul>
         <li>USB or other external drive</li>
@@ -223,9 +225,33 @@
         Tip: place the file in a <a href="http://www.truecrypt.org/" target="_blank">truecrypt</a> volume before placing it in a storage service or physical device to add even more security.
       </p>
 
+      <h3>Restoring from a backup</h3>
+
+      <p>
+        Ensure the wallet program is closed, then navigate to <b>C:\Users\YOUR_WINDOWS_USERNAME\AppData\Roaming\DogeCoin</b>. If you do not see the "AppData" folder, that is because it is hidden. Go to folder options (WIN7: organize > change folder and search options; WIN8: view > options > change folder and search options), then on the view tab, show hidden files and folders.
+      </p>
+      <img src="images/wallet/windows/win-restore-showhidden.png" class="img-responsive" alt="show hidden files and folders" />
+
+      <p>
+        <b>Place your backup DAT file in the DogeCoin folder</b> and <b>rename it to wallet</b> (wallet.dat). If there is a wallet.dat file already, replace it or rename it to something else (like wallet_abc.dat) before placing in your backup. You should be good to go now!
+      </p>
+      <img src="images/wallet/windows/win-restore-placement.png" class="img-responsive" alt="place in backupwalletfile.dat and rename to wallet.dat" />
+
 
       <h2>Upgrading your wallet</h2>
-      <p>Wallets are software and get important updates over time. We'll write up how to safely upgrade soon!</p>
+      <p>
+        Wallets get important updates over time. Upgrading should be as simple:
+      </p>
+      
+      <ol>
+        <li>download the latest version from the <a href="http://dogecoin.com" target="_blank">official site</a></li>
+        <li>extract the files</li>
+        <li>run the extracted wallet program</li>
+      </ol>
+
+      <p>
+        If it works, feel free to delete or archive the old dogecoin-qt folder. This is because the wallet data is not stored in the same location as the wallet program, but at C:\Users\YOUR_WINDOWS_USERNAME\AppData\Roaming\DogeCoin (do not delete this).
+      </p>
 
     </div>
     

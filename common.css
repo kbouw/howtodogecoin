@@ -26,7 +26,11 @@ body {
 }
 
 h2 {
-    padding-top: 30px;
+    padding-top: 20px;
+}
+
+h3 {
+    padding-top: 15px;
 }
 
 .thumbnail img {

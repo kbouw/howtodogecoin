@@ -142,6 +142,11 @@ ul.dropdown-menu li a:hover {
     border-color: #ddd;
 }
 
+.wallet-bg {
+    background-color: #348eda;
+    
+}
+
 /*--------*/
 /* Footer */
 /*--------*/

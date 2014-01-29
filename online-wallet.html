@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dogecoin Tutorial</title>
+  <link rel="stylesheet" href="common.css">
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-47412110-1', 'howtodogecoin.com');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="index.html" class="navbar-brand"><span class="logo logo-front">dogecoin</span><span class="logo logo-back">tutorial <i class="fa fa-rocket"></i></span></a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="seq-one">
+            <a href="#" class="dropdown-toggle wallet-bg" data-toggle="dropdown">Wallets <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="local-wallet.html">Local wallet</a></li>
+              <li><a href="online-wallet.html">Online wallet</a></li>
+              <li><a href="paper-wallet.html">Paper wallet</a></li>
+            </ul>
+          </li>
+          <li class="seq-two"><a href="mining.html">Mining</a></li>
+          <li class="seq-two"><a href="faucets.html">Faucets</a></li>
+          <li class="seq-two"><a href="exchanges.html">Currency conversion</a></li>
+          <li class="seq-three"><a href="tipping.html">Tipping</a></li>
+          <li class="seq-three"><a href="markets.html">Buy stuff</a></li>
+          <li class="seq-four"><a href="scams.html">Scams</a></li>
+          <li class="seq-four">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Links <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="http://goodshibe.com/" target="_blank">the good shibe</a></li>
+              <li><a href="http://reddit.com/r/dogecoin" target="_blank">/r/dogecoin</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+
+  <!-- start main container -->
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-8">
+        <h1>Getting a Dogecoin wallet</h1>
+      </div>
+      <div class="col-md-4 right update">
+        <code><strong>Last updated on Jan 25, 2014</strong></code>
+      </div>
+    </div>
+
+    <p>
+      Your wallet is where you keep all your Dogecoins. There are two types, local and online.
+    </p>
+    <p>
+      <b>Local wallets</b> save your coins on your computer. This means if your computer spontaneously explodes, you will lose your coins! However you can and <i>should</i> make backups.
+    </p>
+
+    <p>
+      <b>Online wallets</b> are services run by other people. You entrust them with your wallet information and in return, can access your wallet easily from anywhere. It is more convenient than local wallets, but they have their own risks. The people running the wallet service could turn out to be bad shibes and run off with your coins! Even good shibes running an online wallet can lose your information if they are hacked!
+    </p>
+
+    <p>
+      You can have multiple wallets, like multiple bank accounts. For example, keep some in an online wallet for convenience and store the rest in secure and backed up local wallets.
+    </p>
+
+    <p class="alert alert-info">
+      Recommendation: start out with a local wallet, then explore online options when you are comfortable with Dogecoin. <i>Never store all your coins online!</i>
+    </p>
+
+
+  <!-- ------------------------ BROWSER GUIDE ------------------------ -->
+  <div class="tab-pane" id="browser">
+
+    <h2>1. Sign up for a wallet</h2>
+
+    <p>
+      On the <a href="http://dogecoin.com/" target="_blank">official site</a> click the Browser option. You should be redirected to Dogevault where you will need to create an account to get your wallet.
+    </p>
+
+    <h2>2. Your receive address</h2>
+
+    <p>
+      With your account created, you now have a wallet and can start receiving coins! When you select "Receive Dogecoin" from the left sidebar you will have a single address. 
+    </p>
+    <img src="images/wallet/browser/browser-menu-receive.png" class="img-responsive" alt="receive menu icon example" />
+
+    <p>
+      To receive Doge, just have people send to this address or if you're receiving doge from mining, input this address in the send field from your mining pool account. If you were introduced to Doge via <a href="tipping.html">a tip</a>, we cover how to collect it with your address on the tipping page.
+    </p>
+    <img src="images/wallet/browser/browser-address.png" class="img-responsive" alt="browser address example" />
+
+    <p>
+      If you want to track your sources of coins more effectively, you can create new addresses and give them labels. For example, I can create and give out a new address to receive doge specifically for a college savings fund, which will distinguish them in the history. All these addresses go to the same wallet though.
+    </p>
+    <img src="images/wallet/browser/browser-label.png" class="img-responsive" alt="browser label example" />
+
+    <p class="alert alert-info">
+      Note: it <b>is safe</b> to give this receive address to people you don't know, it is a one way street! Bad shibes cannot pull doge out from it.
+    </p>
+
+    <hr>
+    <h2>Sending Doge</h2>
+    <p>
+      Choose "Send Dogecoin" from the left sidebar in your account. 
+    </p>
+    <img src="images/wallet/browser/browser-menu-send.png" class="img-responsive" alt="send menu icon example" />
+
+    <p>
+      On this page, enter the send address with the amount of Dogecoin you want to trasnfer and send the payment!
+    </p>
+    <img src="images/wallet/browser/browser-send.png" class="img-responsive" alt="sending doge example" />
+
+  </div>
+
+</div>
+<!-- end main container -->
+
+<div class="container">
+  <footer>
+    <hr>
+    <ul class="nav nav-pills">
+      <li>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://dogecointutorial.com" data-text="Get started with Dogecoin!" data-size="large" data-count="none" data-hashtags="dogecoin">Share this!</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      </li>
+      <li>
+        <a href="about.html">About us</a>
+      </li>
+      <li>
+        <a href="https://github.com/kbouwser/howtodogecoin">Github</a>
+      </li>
+      <li> 
+        <a href="mailto:howtodogecoin@gmail.com?subject=Content update">
+          Email us
+        </a>
+      </li>
+      <li>
+        <span class="show-tooltip" data-toggle="tooltip" data-placement="top" data-trigger="hover" title="howtodogecoin tip address">DH6GFXn5tghFYnp4M8a55u18sCxtHP23ME</span>
+      </li>
+    </ul>
+  </footer>
+</div>
+
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<!-- <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".show-tooltip").tooltip();
+});
+</script>
+
+<script>
+$(function () {
+  $('#wallets a:first').tab('show')
+})
+</script>
+</body>
+</html>

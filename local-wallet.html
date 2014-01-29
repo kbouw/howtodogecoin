@@ -40,7 +40,7 @@
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
           <li class="seq-one">
-              <a href="#" class="dropdown-toggle wallet-bg" data-toggle="dropdown">Wallets <b class="caret"></b></a>
+              <a href="#" class="dropdown-toggle dropdown-bg" data-toggle="dropdown">Wallets <b class="caret"></b></a>
             <ul class="dropdown-menu">
               <li><a href="local-wallet.html">Local wallet</a></li>
               <li><a href="online-wallet.html">Online wallet</a></li>
@@ -50,7 +50,13 @@
           <li class="seq-two"><a href="mining.html">Mining</a></li>
           <li class="seq-two"><a href="faucets.html">Faucets</a></li>
           <li class="seq-two"><a href="exchanges.html">Currency conversion</a></li>
-          <li class="seq-three"><a href="tipping.html">Tipping</a></li>
+          <li class="seq-three">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tipping <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="reddit-tipping.html">Reddit</a></li>
+              <li><a href="twitter-tipping.html">Twitter</a></li>
+            </ul>
+          </li>
           <li class="seq-three"><a href="markets.html">Buy stuff</a></li>
           <li class="seq-four"><a href="scams.html">Scams</a></li>
           <li class="seq-four">
@@ -326,48 +332,71 @@
       <h2>Securing your wallet</h2>
       
       <p>
-        You are able to secure your wallet with a set password, which you will be prompted for each time a withdrawal is made from your wallet. Select "Settings" from your main menu, then "Encrypt Wallet".
+        The official wallet can encrypt the wallet file, requiring a password to access it. To get started, click "settings" then "encrypt wallet".
       </p>
       <img src="images/wallet/mac/mac-encrypt.jpg" class="img-responsive" alt="encrypt wallet settings example" />
 
       <p>
-        Then set your password.
+        You will be prompted to enter a password and confirm it. The wallet will need to restart afterwards.
       </p>
 
       <p class="alert alert-danger">
-        Note: DO NOT lose this password. If you do, you will no longer be able to withdraw coins from your wallet and any coins that have been deposited into your wallet will be lost.
+        Warning: do not forget this password. You will lose your wallet if you do.
       </p>
       <img src="images/wallet/mac/mac-encrypt-password.jpg" class="img-responsive" alt="setting encrypt wallet password example" />
 
       <h2>Backing up your wallet</h2>
 
-      <p>
-        In backing up your wallet, you will be creating a duplicate file to be stored elsewhere. To start, select "File" from your main menu, then "Backup Wallet".
+      <p class="alert alert-info">
+        Note: we recommend you encrypt your wallet first (instructions above)
       </p>
 
-      <p class="alert alert-info">
-        Note: It is best practice to create at least 2 - 3 backups and store them in different locations (i.e., thumbdrive, dropbox, cd).
+      <p>
+        To start, go to "file" then "backup wallet".
       </p>
       <img src="images/wallet/mac/mac-backup.jpg" class="img-responsive" alt="backup wallet settings example" />
 
       <p>
-        Give your backup file a name and location to be stored.
+        You will be asked to pick a location to save the file and a file name. Remember where and what you named it, it will be a DAT file.
       </p>
       <img src="images/wallet/mac/mac-backup-save.jpg" class="img-responsive" alt="wallet backup file name example" />
-
-      <p>
-        After saving the file, ensure it is the location specified. As long as you have this file, you can restore your wallet if it is ever lost.
-      </p>
-
-      <p class="alert alert-danger">
-        Note: If you change the password used to secure your wallet <strong>after</strong> you have backed up your wallet, the backup file will not contain the new password change. Be sure to update your backup files if you change your secure wallet password.
-      </p>
       <img src="images/wallet/mac/mac-backup-file.jpg" class="img-responsive" alt="wallet backup file example" />
 
-      <!--
+      <p>
+        Now you have a duplicate of your wallet information...however it is on the same computer so it doesn't do you any good if your computer is destroyed or wiped. We need to put it in <i>at least</i> one other location.
+      </p>
+
+      <p>
+        Navigate to your backup file's location and copy it to <b>at least one</b> of the following:
+      </p>
+      <ul>
+        <li>USB or other external drive</li>
+        <li>Dropbox, Google Drive, SkyDrive, or other cloud storage service.</li>
+        <li>Physical media, such as DVD or CD</li>
+      </ul>
+
+      <p class="alert alert-info">
+        Tip: put your physical backups (USB, DVD, CD, etc) in a different location to prevent losing your wallet in the event the building housing your computer is lost.
+      </p>
+
+      <p class="alert alert-info">
+        Tip: place the file in a <a href="http://www.truecrypt.org/" target="_blank">truecrypt</a> volume before placing it in a storage service or physical device to add even more security.
+      </p>
+
       <h2>Upgrading your wallet</h2>
-      <p>Wallets are software and get important updates over time. We'll write up how to safely upgrade soon!</p>
-      -->
+      <p>
+        Wallets get important updates over time. Upgrading should be as simple:
+      </p>
+      
+      <ol>
+        <li>download the latest version from the <a href="http://dogecoin.com" target="_blank">official site</a></li>
+        <li>unzip the files</li>
+        <li>run the wallet program</li>
+      </ol>
+
+      <p>
+        If it works, feel free to delete or archive the old dogecoin-qt folder. This is because the wallet data is not stored in the same location as the wallet program, but at YOUR_MAC_USERNAME/Library/Application/Support/Dogecoin (do not delete this).
+      </p>
 
     </div>
 

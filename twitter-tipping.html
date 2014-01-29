@@ -48,10 +48,10 @@
             </ul>
           </li>
           <li class="seq-two"><a href="mining.html">Mining</a></li>
-          <li class="seq-two active"><a href="faucets.html">Faucets</a></li>
+          <li class="seq-two"><a href="faucets.html">Faucets</a></li>
           <li class="seq-two"><a href="exchanges.html">Currency conversion</a></li>
           <li class="seq-three">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tipping <b class="caret"></b></a>
+            <a href="#" class="dropdown-toggle dropdown-bg" data-toggle="dropdown">Tipping <b class="caret"></b></a>
             <ul class="dropdown-menu">
               <li><a href="reddit-tipping.html">Reddit</a></li>
               <li><a href="twitter-tipping.html">Twitter</a></li>
@@ -76,44 +76,71 @@
 
   <div class="row">
     <div class="col-md-8">
-      <h1>Faucets - free Doge</h1>
+      <h1>Tipping - spread the Doge-ness</h1>
     </div>
     <div class="col-md-4 right update">
-      <code><strong>Last updated on Jan 24, 2014.</strong></code>
+      <code><strong>Last updated on Jan 25, 2014.</strong></code>
     </div>
   </div>
 
   <p>
-    Ready to get your first doge? There are sites known as faucets / water bowls that give out free doge. They are filled by generous shibes, so remember to give back when you are established! If they run out, they are dry until someone refills them.
-  </p>
-  <p>
-    To receive your free Dogecoin payout, all you have to do is give your receive address to the faucet site. Payouts won't immediately show up in your wallet because they are added to the block chain, then you must sync up to that point.
+    Tipping is possible on Twitter and Reddit (and possibly other places, but this is what we have experience with). Tipping brings much joy and is an essential part of the community. It is also important because it introduces people to the wonders of Dogecoin and keeps Doge in circulation.
   </p>
 
-  <p>
-    Below are lists of faucets maintained by other shibes.
-  </p>
-  <ul>
-    <li><a href="https://github.com/ummjackson/dogecoin-resources#faucets" target="_blank">github.com/ummjackson/dogecoin-resources#faucets</a></li>
-    <li><a href="http://freedogecoins.net/" target="_blank">freedogecoins.net</a></li>
-    <li><a href="http://www.dogefaucets.com/" target="_blank">dogefaucets.com</a></li>
-    <li><a href="http://www.doktorrf.com/dogecoin/faucets.html" target="_blank">doktorrf.com/dogecoin/faucets</a></li>
-  </ul>
+  <h2>Tipping with Twitter</h2>
 
-  <h3>Giving back</h3>
-  <p>Faucets usually also post their donations address. To give to a faucet instead of taking, just use your wallet to send Doge to that address.</p>
+  <h3>1. Register with the tip bot</h3>
+
+  <p>
+    <a href="http://tipdoge.info/connect.php" target="_blank">Visit this link</a> and log in with your twitter credentials.
+  </p>
+
+  <h3>2. Make a positive balance</h3>
+
+  <p>
+    After authenticating your account, you'll receive a series of instructions for depositing Dogecoin to begin tipping. Below is a screen shot of what you should see.
+  </p>
+  <img src="images/tipping/twitter-instructions.png" class="img-responsive" alt="twitter tipping instructions" />
+
+  <h3>Send tips!</h3>
+  <p>
+    Below is an example of how to use the tip bot once you have a positive balance:
+  </p>
+  <img src="images/tipping/twitter-tip-example.png" class="img-responsive" alt="twitter tip example" />
+
+  <p>
+    When you send a tip over twitter, your tweet will receive a favorite by the dogetipbot if it was successfully sent.
+  </p>
+  <img src="images/tipping/twitter-tip-fav.png" class="img-responsive" alt="dogetipbot favorite tweet example" />
+
+  <p class="alert alert-info">
+    Note: the amount received by the bot will have a 1 Doge reduction because a Doge transfer consumes 1 Doge. For example, if you gave a tip of 50, the recipient will receive 49.
+  </p>
+
+  <h3>Collect tips!</h3>
+
+  <p>
+    To review your twitter doge balance, politely ask the dogetipbot by replying with balance.
+  </p>
+  <img src="images/tipping/twitter-tip-balance.png" class="img-responsive" alt="twitter balance example" />
+
+  <p>
+    To withdraw your monies, just provide the the dogetipbot with your send address and it will kindly send you your doge fortune! 
+  </p>
+  <img src="images/tipping/twitter-tip-withdraw.png" class="img-responsive" alt="twitter withdraw example" />
 
   <nav class="well pageflow">
     <div class="row">
       <div class="col-md-6">
-        <a href="wallets.html">previous: wallets</a>
+        <a href="mining.html">previous: mining coins</a>
       </div>
       <div class="col-md-6 right">
+        <a href="exchanges.html">next: currency conversions</a>
       </div>
     </div>
   </nav>
 
-  </div>
+   </div>
   <!-- end main container -->
 
   <div class="container">
@@ -152,6 +179,12 @@
   $(document).ready(function(){
     $(".show-tooltip").tooltip();
   });
+  </script>
+
+  <script>
+  $(function () {
+    $('#tipping a:first').tab('show')
+  })
   </script>
 </body>
 </html>

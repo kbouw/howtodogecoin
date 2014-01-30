@@ -231,6 +231,9 @@
   <p>
     At the bottom, enter in "importprivkey PAPER_WALLET_PRIVATE_KEY", replacing PAPER_WALLET_PRIVATE_KEY with the paper wallet's private key.
   </p>
+  <p class="alert alert-info">
+    Note: if you have encrypted your wallet, you must first unlock it. Enter <b>walletpassphrase YOUR_PASSPHRASE TIMEOUT_NUMBER</b> into the console, where YOUR_PASSPHRASE is your passphrase and SOME_NUMBER is a number representing a timeout value. For example, "walletpassphrase secretpassword 500". If you do not do this, you may get error -4 when you attempt to import the key.
+  </p>
   <img src="images/wallet/paper/paper-wallet-importprivkey.png" class="img-responsive" alt="enter importprivkey" />
 
   <p>

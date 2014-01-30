@@ -74,9 +74,155 @@
     <!-- start main container -->
   <div class="container">
 
-    <h2>
-      This guide has not been written yet...sorry!
-    </h2>
+    <div class="row">
+    <div class="col-md-8">
+      <h1>Paper wallets</h1>
+    </div>
+    <div class="col-md-4 right update">
+      <code><strong>Last updated on Jan 30, 2014</strong></code>
+    </div>
+  </div>   
+
+    <p>
+      Paper wallets are identical in function as the local wallet software, except they have the added benefit of being physically transferable like cash. They are also one of the safest ways to store Doge if proper precautions are taken.
+    </p>
+
+    <p>
+      In general, creating a paper wallet consists of:
+    </p>
+    <ol>
+      <li>generating a new wallet (private / public key pair) and printing it</li>
+      <li>sending Doge to the newly created wallet</li>
+      <li>withdrawing the entire paper amount when ready</li>
+    </ol>
+
+    <p class = "alert alert-info">
+      Note: look at the <b>local wallet</b> section first if you are new to Dogecoin.
+    </p>
+
+    <h3>Generating and printing a new wallet</h3>
+
+    <p>
+      For this guide, we are going to use the most popular way of generating a paper wallet. First, go to Wells Riley's <a href="https://github.com/wellsriley/dogecoinpaperwallet" target="_blank">paper wallet generator</a> (scroll down) and <b>download the zip file</b>. You can use the <a href="http://dogecoinpaperwallet.net/" target="_blank">online version</a> instead, but this way is <i>less safe</i>.
+    </p>
+
+    <img src="images/wallet/paper/paper-wallet-download.jpg" class="img-responsive" alt="paper wallet download" />
+
+    <p>
+      If you downloaded the file, extract the zip and navigate to the folder. Within dogecoinpaperwallet-master, open "index.html" with your web browser.
+    </p>
+
+    <p class="alert alert-info">
+      Optional: for extra security, use a clean operating system that has no internet connection, such as an <a href="https://help.ubuntu.com/community/LiveCD" target="_blank"><b>Ubuntu Live CD</b></a> to unzip the file contents and open "index.html".
+    </p>
+
+    <img src="images/wallet/paper/paper-wallet-contents.png" class="img-responsive" alt="paper wallet extracted" />
+
+    <p>
+      You will be asked to <b>move your mouse around in the box</b>. You must have <b>Javascript enabled</b> (in most cases, it will be enabled by default). This is used in the wallet generation process, so more random movement is better!
+    </p>
+    <img src="images/wallet/paper/paper-wallet-mouse.jpg" class="img-responsive" alt="paper wallet move mouse" />
+    <p>
+      Follow the steps in the browser and you will have a paper wallet! The printing calibration is important to ensure the QR code is printed correctly. During this process, it generates a public key and a private key. <b>Do not reveal the private key</b> to anyone.
+    </p>
+    <p>
+      The public key is your deposit address, and the private key is used to redeem the entire balance. If someone finds out the private key, they can claim the entire balance on the wallet. This is why the wallet printout is designed to fold over and hide the private key.
+    </p>
+
+    <div class="panel panel-default">
+    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+            <i class="fa fa-book"></i>
+            Learn more: what is a QR code?
+            <span class="body-caret"></span>
+        </h4>
+      </div>
+    </a>
+    <div id="collapseOne" class="panel-collapse collapse">
+      <div class="panel-body">
+        <p>
+          <a href="http://en.wikipedia.org/wiki/Qr_code" target="_blank">QR codes</a> are similar to bar codes. A machine can scan them and receive information. In this case, the public key or private key. This allows a person with a QR code scanner to avoid having to manually type the keys in. 
+        </p>
+
+        <p>
+          To read them, you may need to install a program onto your computer or phone. If you want to generate your own QR codes, an easy way to do this is to use the <a href="http://www.wolframalpha.com" target="_blank">Wolfram Alpha</a> website. For example: submitting <a href="http://www.wolframalpha.com/input/?i=QR+code%3A+http%3A%2F%2Fdogecointutorial.com" target="_blank">"QR code: http://dogecointutorial.com"</a> will generate a QR code containing that address.
+        </p>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+            <i class="fa fa-book"></i>
+            Learn more: how is it possible to generate a key pair offline?
+            <span class="body-caret"></span>
+        </h4>
+      </div>
+    </a>
+    <div id="collapseTwo" class="panel-collapse collapse">
+      <div class="panel-body">
+        <p>
+          Every wallet consists of at least one public and private key pair. The public key is your receive address, and the private key is what you use to claim ownership of the public key. This is possible because the public key can be mathmatically calculated from the private key, but not the other way around. As a result, the block chain only needs to store the public key in each transaction.
+        </p>
+
+        <p>
+          Private keys themselves can be almost any 256 bit number, so the number of possible private keys is approximately 2 to the power of 256. This is a very large range, making it very very unlikely that a private key will ever be duplicated. Thus, even private keys generated offline can be treated as unique and does not have to be validated online.
+        </p>
+
+        <p>You can read more <a href="https://en.bitcoin.it/wiki/Private_key" target="_blank">here</a>.</p>
+      </div>
+    </div>
+  </div>
+
+  <img src="images/wallet/paper/paper-wallet-index.jpg" class="img-responsive" alt="paper wallet in browser" />
+
+  <h3>Adding Doge to the paper wallet</h3>
+
+  <p>
+    While you now have a paper wallet, the balance is 0. To add Doge, simply send Doge to the paper wallet's public key as the address.
+  </p>
+  <p class="alert alert-info">
+    Tip: you can check what has been sent to the wallet by <b>searching for transactions involving the public key</b> <a href="http://dogechain.info/chain/Dogecoin" target="_blank">here</a>.
+  </p>
+  <img src="images/wallet/windows/win-send.png" class="img-responsive" alt="sending Doge in Windows" />
+
+  <hr>
+
+  <h2>Redeeming a paper wallet</h2>
+
+  <p>
+    When you are ready to redeem the wallet, you reveal the private key on the paper wallet and enter it into your local wallet client. To do this, first, open the local wallet software.
+  </p>
+
+  <p class="alert alert-info">
+    Note: redeeming a paper wallet consumes the <b>entire balance</b>. You cannot opt to redeem only part of the wallet.
+  </p>
+
+  <p>
+    In the local wallet (dogecoin-qt), go to <b>help > debug window</b>
+  </p>
+  <img src="images/wallet/paper/paper-wallet-help.png" class="img-responsive" alt="help > debug window" />
+
+  <p>
+    Select the console tab.
+  </p>
+  <img src="images/wallet/paper/paper-wallet-console.png" class="img-responsive" alt="console" />
+
+  <p>
+    At the bottom, enter in "importprivkey PAPER_WALLET_PRIVATE_KEY", replacing PAPER_WALLET_PRIVATE_KEY with the paper wallet's private key.
+  </p>
+  <img src="images/wallet/paper/paper-wallet-importprivkey.png" class="img-responsive" alt="enter importprivkey" />
+
+  <p>
+    It will take a moment to import everything, but you should be done!
+  </p>
+
+
+
   </div>
   <!-- end main container -->
 

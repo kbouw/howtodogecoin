@@ -122,6 +122,25 @@
       For this guide, we are going to use the most popular way of generating a paper wallet. First, go to Wells Riley's <a href="https://github.com/wellsriley/dogecoinpaperwallet" target="_blank">paper wallet generator</a> (scroll down) and <b>download the zip file</b>. You can use the <a href="http://dogecoinpaperwallet.net/" target="_blank">online version</a> instead, but this way is <i>less safe</i>.
     </p>
 
+    <div class="panel panel-default">
+    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+            <i class="fa fa-book"></i>
+            Learn more: how can I trust these downloads?
+            <span class="body-caret"></span>
+        </h4>
+      </div>
+    </a>
+    <div id="collapseThree" class="panel-collapse collapse">
+      <div class="panel-body">
+        <p>
+          The linked Github is actually the source code for the paper wallet download. If you know how to read code, you can inspect everything yourself to ensure there is no malicious intent. They also provide a way to ensure the downloaded zip file matches the publicly visible source code in the "Wow. Very Security" section of the page.
+        </p>
+      </div>
+    </div>
+  </div>
+
     <img src="images/wallet/paper/paper-wallet-download.jpg" class="img-responsive" alt="paper wallet download" />
 
     <p>
@@ -186,7 +205,7 @@
         </p>
 
         <p>
-          Private keys themselves can be almost any 256 bit number, so the number of possible private keys is approximately 2 to the power of 256. This is a very large range, making it very very unlikely that a private key will ever be duplicated. Thus, even private keys generated offline can be treated as unique and does not have to be validated online.
+          Private keys themselves can be almost any 256 bit number, so the number of possible private keys is approximately 2 to the power of 256. This is a very large range, making it very very unlikely that a private key will ever be duplicated. The random mouse movement performed helps with this as well. Thus, even private keys generated offline can be treated as unique and does not have to be validated online first.
         </p>
 
         <p>You can read more <a href="https://en.bitcoin.it/wiki/Private_key" target="_blank">here</a>.</p>

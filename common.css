@@ -82,6 +82,19 @@ div.thumbnail .caption p {
 /* NAVBAR */
 /*--------*/
 
+/*
+.support {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 728px;
+}
+
+.support-img {
+    margin-top: 0;
+}
+*/
+
 .navbar-default {
     background-color: #4c4c4c !important;
     border-bottom: none !important;

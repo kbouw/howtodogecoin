@@ -57,14 +57,14 @@
             </ul>
           </li>
           <li class="seq-three">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tipping <b class="caret"></b></a>
+            <a href="#" class="dropdown-toggle dropdown-bg" data-toggle="dropdown">Tipping <b class="caret"></b></a>
             <ul class="dropdown-menu">
               <li><a href="reddit-tipping.html">Reddit</a></li>
               <li><a href="twitter-tipping.html">Twitter</a></li>
               <li><a href="imgur-tipping.html">Imgur</a></li>
             </ul>
           </li>
-          <li class="seq-three active"><a href="markets.html">Buy stuff</a></li>
+          <li class="seq-three"><a href="markets.html">Buy stuff</a></li>
           <li class="seq-four"><a href="scams.html">Scams</a></li>
           <li class="seq-four">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Links <b class="caret"></b></a>
@@ -84,48 +84,71 @@
 
   <div class="row">
     <div class="col-md-8">
-      <h1>Spend your hard earned Dogecoin!</h1>
+      <h1>Tipping - spread the Doge-ness</h1>
     </div>
     <div class="col-md-4 right update">
-      <code><strong>Last updated on Jan 24, 2014.</strong></code>
+      <code><strong>Last updated on Jan 31, 2014.</strong></code>
     </div>
   </div>
 
   <p>
-    Marketplaces are where shibes mingle to exchange goods and services. You'll find everything from trading USD for doge, to handcrafted shibe emails, molecular biology advice and even the occasional dare in exchange for Doge. Check out any of the marketplaces below to get started.
+    Tipping is possible on Twitter, Reddit and Imgur (and possibly other places, but this is what we have experience with). Tipping brings much joy and is an essential part of the community. It is also important because it introduces people to the wonders of Dogecoin and keeps Doge in circulation.
   </p>
+
+  <h2>Tipping with Imgur</h2>
+
+  <h3>1. Register with the tip bot</h3>
+  
+  <p>
+    To get started, log into your account and choose “New Message”.
+  </p>
+  <img src="images/tipping/imgur-message.png" class="img-responsive" alt="send message example" />
 
   <p>
-    Many bartering, such community!
+    You’re going to send the givedoge tip bot a <strong>register</strong> message to create your imgur tipping account.
   </p>
+  <img src="images/tipping/imgur-register.png" class="img-responsive" alt="givedoge register example" />
 
-  <p class="alert alert-danger">
-    Warning: please read up on the scams section and learn about the systems in place when dealing with other users directly. Unfortunately, there are people who will take advantage of you.
+  <p>
+    You should receive a reply almost instantly confirming your account has been created. This message will also include your imgur deposit address.
   </p>
+  <img src="images/tipping/imgur-register-reply.png" class="img-responsive" alt="register replye example" />
 
-  <ul>
-    <li><a href="http://www.dogepages.com/" target="_blank">dogepages</a></li>
-    <li><a href="http://www.stuffcoins.com/" target="_blank">stuffcoins</a></li>
-    <li><a href="http://www.reddit.com/r/dogemarket/" target="_blank">reddit.com/r/dogemarket</a></li>
-    <li><a href="http://www.reddit.com/r/dogebay" target="_blank">reddit.com/r/dogebay</a></li>
-    <li><a href="http://www.reddit.com/r/dogeservice" target="_blank">reddit.com/r/dogeservice</a></li>
-    <li><a href="http://www.reddit.com/r/dogeforgames" target="_blank">reddit.com/r/dogeforgames</a></li>
-    <li><a href="http://www.reddit.com/r/jobs4dogecoins" target="_blank">reddit.com/r/jobs4dogecoins</a></li>
-    <li><a href="http://www.reddit.com/r/dogecoinchallenge" target="_blank">reddit.com/r/dogecoinchallenge</a></li>
-  </ul>
+  <h3>2. Deposit to the balance</h3>
+  <p>
+    You must have something to tip with, so open your wallet and send Doge to the address provided in the reply message from step 1. If for any reason you forget your deposit address or account balance, just message <strong>info</strong> to the givedoge tip bot.
+  </p>
+  <img src="images/tipping/imgur-info.png" class="img-responsive" alt="givedoge info example" />
+
+  <h3>3. Send tips in your comments / replies</h3>
+
+  <p>
+    Once you have a positive tip bot balance, you can tip fellow imgurians by including <strong>@givedoge TIP_AMOUNT DOGE</strong> somewhere in your comments or replies. Comments will tip the original poster, while replies tip the person you are replying to. For example:
+  </p>
+  <img src="images/tipping/imgur-tip.png" class="img-responsive" alt="imgur tip example" />
+  <img src="images/tipping/imgur-tip-success.png" class="img-responsive" alt="imgur tip example" />
+
+  <hr>
+
+  <h3>Withdraw from your balance</h3>
+
+  <p>
+    You can withdraw what you deposited / tips received if you have a positive balance. To get Doge back, send a direct message to givedoge with withdraw YOUR_ADDRESS doge.
+  </p>
+  <img src="images/tipping/imgur-withdraw.png" class="img-responsive" alt="imgur withdraw example" />
 
   <nav class="well pageflow">
     <div class="row">
       <div class="col-md-6">
-        <a href="exchanges.html">previous: currency conversions</a>
+        <a href="reddit-tipping.html">previous: tipping with reddit</a>
       </div>
       <div class="col-md-6 right">
-        <a href="scams.html">next: doge scams</a>
+        <a href="twitter-tipping.html">next: tipping with twitter</a>
       </div>
     </div>
   </nav>
 
-  </div>
+   </div>
   <!-- end main container -->
 
   <div class="container">
@@ -164,6 +187,12 @@
   $(document).ready(function(){
     $(".show-tooltip").tooltip();
   });
+  </script>
+
+  <script>
+  $(function () {
+    $('#tipping a:first').tab('show')
+  })
   </script>
 </body>
 </html>

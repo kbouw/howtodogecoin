@@ -87,7 +87,7 @@
       <h1>Getting a local wallet</h1>
     </div>
     <div class="col-md-4 right update">
-      <code><strong>Last updated on Jan 31, 2014</strong></code>
+      <code><strong>Last updated on Feb 01, 2014</strong></code>
     </div>
   </div>
 
@@ -106,6 +106,31 @@
   <p class="alert alert-info">
     Recommendation: start out with a local wallet, then explore online options when you are comfortable with Dogecoin. <i>Never store all your coins online!</i>
   </p>
+
+  <div class="panel panel-default">
+    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+            <i class="fa fa-book"></i>
+            Learn more: how often do I need to backup my local wallet?
+            <span class="body-caret"></span>
+        </h4>
+      </div>
+    </a>
+    <div id="collapseOne" class="panel-collapse collapse">
+      <div class="panel-body">
+        <p>
+          Your wallet does not actually save the coins themselves, but a secret key that gives you ownership of coins in the blockchain. That way, you can't spend your coins then restore from a backup to get them back.
+        </p>
+        <p>
+          Each secret key is paired with a public key (the receive address). When you first run the local wallet, it creates 100 key pairs for you (each public key is revealed when you hit "new address") and saves them all in the first backup you make. As a result, you don't have to periodically make new backups since you don't have any new addresses.
+        </p>
+        <p>
+          The exception is if you create more than 100 addresses or manually add private keys (such as via paper wallet). These additional keys will not be saved in the original backup, so you must make a new one.
+        </p>
+      </div>
+    </div>
+  </div>
 
   <p>
     Go to the <a href="http://dogecoin.com/" target="_blank">official site</a>. You should see the following:

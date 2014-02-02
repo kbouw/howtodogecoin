@@ -117,15 +117,27 @@
     Pick your operating system below to continue with the local wallet guide.
   </p>
 
-  <ul class="nav nav-tabs" id="wallets">
-    <li><a href="#windows" data-toggle="tab"><i class="fa fa-windows"></i>&nbsp;&nbsp;Windows</a></li>
-    <li><a href="#mac" data-toggle="tab"><i class="fa fa-apple"></i>&nbsp;&nbsp;Mac</a></li>
-    <li><a href="#android" data-toggle="tab"><i class="fa fa-android"></i>&nbsp;&nbsp;Android</a></li>
-  </ul>
+  <div class="row" id="wallets">
+    <div class="col-md-offset-1 col-md-2 col-sm-offset-1 col-sm-2 os-menu">
+      <a href="#windows" data-toggle="tab">
+        <i class="fa fa-windows win-bg"></i>
+      </a>
+    </div>
+    <div class="col-md-offset-2 col-md-2 col-sm-offset-1 col-sm-2 os-menu">
+      <a href="#mac" data-toggle="tab">
+        <i class="fa fa-apple mac-bg"></i>
+      </a>
+    </div>
+    <div class="col-md-offset-2 col-md-2 col-sm-offset-1 col-sm-2 os-menu">
+      <a href="#android" data-toggle="tab">
+        <i class="fa fa-android droid-bg"></i>
+      </a>
+    </div>
+  </div>
 
   <div class="tab-content">
     <!-- ------------------------ WINDOWS GUIDE ------------------------ -->
-    <div class="tab-pane" id="windows">
+    <div id="windows">
 
       <h2>Download and extract your wallet</h2>
 
@@ -283,7 +295,7 @@
     </div>
     
     <!-- ------------------------ OSX GUIDE ------------------------ -->
-    <div class="tab-pane" id="mac">
+    <div id="mac">
 
       <h2>Download and unzip your wallet</h2>
 
@@ -441,7 +453,7 @@
     </div>
 
     <!-- ------------------------ ANDROID GUIDE ------------------------ -->
-    <div class="tab-pane" id="android">
+    <div id="android">
       <h2>
         This guide has not been written yet...sorry!
       </h2>
@@ -513,6 +525,14 @@
     $('#wallets a:first').tab('show')
   })
   </script>
+
+  <script>
+    $("#wallets i").click(function(){
+      $("#wallets i").removeClass("active");
+      $(this).addClass("active");
+    });
+  </script>
+
 </body>
 </html>
 

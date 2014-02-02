@@ -169,6 +169,75 @@ ul.dropdown-menu li a:hover {
     margin-top: 30px;
 }
 
+#wallets a:hover {
+    text-decoration: none !important;
+}
+
+.fa-windows {
+    font-size: 8em;
+    display: block !important;
+    text-align: center !important;
+    margin-top: 25px;
+    margin-right: 10px;
+    color: white;
+    padding-top: 25px;
+    padding-right: 10px;
+}
+
+.win-bg {
+    background-color: rgba(85,175,217, 0.5);
+    border-radius: 50%;
+    height: 170px;
+    width: 170px;
+}
+
+.fa-windows:hover, .fa-windows.active {
+    background-color: rgba(85,175,217, 1);
+}
+
+.fa-apple {
+    font-size: 8em;
+    display: block !important;
+    text-align: center !important;
+    margin-top: 25px;
+    margin-right: 10px;
+    color: white;
+    padding-top: 25px;
+}
+
+.mac-bg {
+    background-color: rgba(102,108,118, 0.5);
+    border-radius: 50%;
+    height: 170px;
+    width: 170px;
+}
+
+.fa-apple:hover, .fa-apple.active {
+    background-color: rgba(102,108,118, 1);
+}
+
+.fa-android {
+    font-size: 8em;
+    display: block !important;
+    text-align: center !important;
+    margin-top: 25px;
+    margin-right: 10px;
+    color: white;
+    padding-top: 20px;
+}
+
+.droid-bg {
+    background-color: rgba(244,190,82, 0.5);
+    border-radius: 50%;
+    height: 170px;
+    width: 170px;
+}
+
+.fa-android:hover, .fa-android.active {
+    background-color: rgba(244,190,82, 1);
+}
+
+
 /*--------*/
 /* Footer */
 /*--------*/

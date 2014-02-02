@@ -160,6 +160,19 @@ ul.dropdown-menu li a:hover {
     
 }
 
+
+/*--------*/
+/* WALLET */
+/*--------*/
+
+.nav-tabs {
+    margin-top: 30px;
+}
+
+.local-icon {
+    font-size: 4em;
+}
+
 /*--------*/
 /* Footer */
 /*--------*/

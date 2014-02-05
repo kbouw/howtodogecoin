@@ -324,7 +324,7 @@
 
   <p class="alert alert-info">
     setx GPU_MAX_ALLOC_PERCENT 100<br />
-    cgminer --scrypt -I 10 --temp-target 70 --gpu-fan 10-70 -o stratum+tcp://your-pools-stratum:port-number -u web-login.worker-name -p worker-password
+    cgminer --scrypt -I 13 --temp-target 70 --gpu-fan 10-70 -o stratum+tcp://your-pools-stratum:port-number -u web-login.worker-name -p worker-password
   </p>
 
   <p>
@@ -350,7 +350,7 @@
   <img src="images/mining/batch-in-folder.png" class="img-responsive" alt="where to put the batch file" />
 
   <p>
-    This is an example of what you should see if it is successful. Note the GPU temp, hash rate (number next to Kh/s), and HW value. Temperature indicates how hot your card is getting, hash rate is its performance, and HW is hardware errors. We want HW to be 0, so reduce the intensity (ex: -I 9) if it gets too hot or has any HW errors.
+    This is an example of what you should see if it is successful. Note the GPU temp, hash rate (number next to Kh/s), and HW value. Temperature indicates how hot your card is getting, hash rate is its performance, and HW is hardware errors. We want HW to be 0, so reduce the intensity (ex: -I 10) if it gets too hot or has any HW errors.
   </p>
   <img src="images/mining/cgminer-success.png" class="img-responsive" alt="cgminer success example" />
 

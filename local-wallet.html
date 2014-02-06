@@ -129,10 +129,13 @@
           Your wallet does not actually save the coins themselves, but a secret key that gives you ownership of coins in the blockchain. That way, you can't spend your coins then restore from a backup to get them back.
         </p>
         <p>
-          Each secret key is paired with a public key (the receive address). When you first run the local wallet, it creates 100 key pairs for you (each public key is revealed when you hit "new address") and saves them all in the first backup you make. As a result, you don't have to periodically make new backups since you don't have any new addresses.
+          Each secret key is paired with a public key (the receive address). When you first run the local wallet, it creates 100 key pairs for you (with a public key revealed each time you hit "new address") and saves them all in the first backup you make. As a result, the frequency of backups depends on how many addresses you create. 
         </p>
         <p>
-          The exception is if you create more than 100 addresses or manually add private keys (such as via paper wallet). These additional keys will not be saved in the original backup, so you must make a new one.
+          If you create many addresses yourself (going beyond the initial 100) or manually add private keys (such as via paper wallet), these additional keys will not be saved in the original backup, so you must make a new backup.
+        </p>
+        <p>
+          Another scenario that creates new addresses is called <a href="https://en.bitcoin.it/wiki/Change" target="_blank">"change"</a>. Similar to how you receive a $5 and four $1's if you give someone a $10 bill to pay for something that cost $1, sometimes you receive Doge back from a transaction. This may create a new address for you, so also back up your wallet after ~100 transactions or after very large transactions. (A large transaction may pull from multiple addresses, which may result in multiple "change" addresses).
         </p>
       </div>
     </div>

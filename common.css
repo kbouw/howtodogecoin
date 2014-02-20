@@ -22,7 +22,7 @@ img.no-effects {
 }
 
 body {
-    padding-top: 60px;
+    padding-top: 55px;
 }
 
 h2 {
@@ -34,7 +34,49 @@ h3 {
 }
 
 .container {
-    max-width: 1015px;
+    max-width: 1015px !important;
+}
+
+.jumbotron {
+    margin-bottom: 0px !important;
+    background-image: url('images/doge_lay.jpg');
+    background-size: cover;
+}
+
+.jumbotron .jumbotron-text {
+    color: #fff;
+}
+
+/* TODO: media query to remove padding if mobile */
+.jumbotron .step-box-container {
+    padding-top: 48px;
+}
+.jumbotron .step-box-left {
+    padding: 0 14px 0 0;
+}
+.jumbotron .step-box-center {
+    padding: 0 7px 0 7px;
+}
+.jumbotron .step-box-right {
+    padding: 0 0 0 14px;
+}
+
+.jumbotron .step-box .panel-body {
+    font-size: 0.6em;
+}
+
+.jumbotron .step-box-left .panel .panel-heading {
+    border-color: #7ddd2e;
+}
+.jumbotron .step-box-center .panel .panel-heading {
+    border-color: #0090ff;
+}
+.jumbotron .step-box-right .panel .panel-heading {
+    border-color: #f8213e;
+}
+
+.ad-container {
+    background-color: #eee;
 }
 
 .thumbnail img {
